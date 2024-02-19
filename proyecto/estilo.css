@@ -191,6 +191,7 @@ input[type="submit"] {
     color: white; /* Texto en color blanco */
     border: none; /* Sin bordes */
     padding: 10px;
+    cursor: pointer; /* Cursor tipo puntero */
     border-radius: 5px; /* Bordes redondeados */
     transition: background-color 0.3s ease; /* Transición suave del color de fondo */
 }
