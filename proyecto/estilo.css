@@ -55,25 +55,22 @@ main section{
     margin-bottom: 20px;
 }
 
-.content {
-    padding: 20px;
-    background: aliceblue;
-    color: #242424;
-}
-
-/* Estilo para las secciones de contenido */
-.content section {
-    margin-bottom: 20px;
-}
 
 
-
-.tarifa {
+main article{ /*Esto es para recuadros, cambiar si es necesario*/
     background:aliceblue;
-    
     border: 1px solid #e7e7e7;
     padding: 15px;
     margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.tarifa { /*recuadro para las tarifas*/
+    background:aliceblue;
+    border: 1px solid #e7e7e7;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
 }
 
 /* Estilo para el pie de página */
@@ -154,6 +151,7 @@ button {
     display: inline-block; /* Tipo de display */
     font-size: 16px; /* Tamaño de fuente */
     margin: 4px 2px; /* Margen exterior */
+    margin-top: 15px;
     transition: all 0.3s; /* Transición suave para todas las propiedades */
     cursor: pointer; /* Cursor tipo puntero */
     border-radius: 25px; /* Bordes redondeados */
