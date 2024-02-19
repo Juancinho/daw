@@ -1,0 +1,27 @@
+/* estiloFAQ.css */
+
+main h1 {
+    color: #005A9C;
+    margin-bottom: 20px;
+}
+
+main ul {
+    list-style: none;
+    padding: 0;
+}
+
+main ul li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+main ul li h2 {
+    color: #333;
+    margin: 0 0 5px 0;
+}
+
+main ul li p {
+    margin: 0;
+}
+

@@ -1,11 +1,11 @@
 /* Estilo básico para el cuerpo de la página */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    color: #102334;
+    background-color: #f4f4f4;
+    padding: 20px;
     margin: 0;
-    padding: 0;
-    background: #242424;
 }
-
 /* Estilo para el encabezado */
 header {
     background: #ffffff;
@@ -46,9 +46,11 @@ nav a {
 
 /* Estilo para el contenido principal */
 main {
+    background-color: #ffffff;
     padding: 20px;
-    background: aliceblue;
-    color: #242424;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 main section{
@@ -119,24 +121,7 @@ footer .info-legal {
    
 }
 
-/* Estilo base para la tabla */
-.tabla-horarios {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-family: sans-serif;
-    min-width: 400px;
-  
-    
-  }
-  
-.tabla-horarios thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
+
   
 
 
