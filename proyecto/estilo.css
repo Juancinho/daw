@@ -132,3 +132,27 @@ footer .info-legal {
         margin: 5px 0;
     }
 }
+
+
+
+/* Estilo base para la tabla */
+.tabla-horarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: sans-serif;
+    min-width: 400px;
+  
+    
+  }
+  
+.tabla-horarios thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  
+  
