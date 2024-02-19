@@ -45,6 +45,16 @@ nav a {
 }
 
 /* Estilo para el contenido principal */
+main {
+    padding: 20px;
+    background: aliceblue;
+    color: #242424;
+}
+
+main section{
+    margin-bottom: 20px;
+}
+
 .content {
     padding: 20px;
     background: aliceblue;
@@ -57,7 +67,8 @@ nav a {
 }
 
 
-.content article {
+
+.tarifa {
     background:aliceblue;
     
     border: 1px solid #e7e7e7;
@@ -152,6 +163,37 @@ footer .info-legal {
     text-align: left;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+  }
+  
+
+
+/* Estilo base para el botón */
+button {
+    background-color: #102334; /* Color de fondo azul */
+    border: none; /* Sin bordes */
+    color: white; /* Texto en color blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Texto centrado */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Tipo de display */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen exterior */
+    transition: all 0.3s; /* Transición suave para todas las propiedades */
+    cursor: pointer; /* Cursor tipo puntero */
+    border-radius: 25px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Sombra suave */
+  }
+  
+  /* Estilo para el botón al pasar el mouse (hover) */
+button:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Sombra más pronunciada */
+  }
+  
+  /* Estilo para el botón al ser presionado (active) */
+button:active {
+    background-color: #004094; /* Color de fondo aún más oscuro */
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2); /* Sombra ajustada */
   }
   
   
