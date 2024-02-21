@@ -15,8 +15,22 @@ main img {
     border-radius: 5px;
 }
 
-.info-atraccion {
-    background-color: #fd6d68;
+.info-atraccion_intensa {
+    background-color: red;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 3px;
+}
+.info-atraccion_familiar {
+    background-color: green;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 3px;
+}
+.info-atraccion_moderada {
+    background-color: royalblue;
     color: #fff;
     padding: 5px 10px;
     display: inline-block;

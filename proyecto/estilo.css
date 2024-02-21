@@ -57,7 +57,14 @@ main section{
     margin-bottom: 20px;
 }
 
-
+.carrusel {
+    display: flex;
+ 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
 
 main article{ /*Esto es para recuadros, cambiar si es necesario*/
     background:aliceblue;
@@ -75,6 +82,21 @@ main article{ /*Esto es para recuadros, cambiar si es necesario*/
     border-radius: 15px;
 }
 
+/*Estilo para iconos de zona de parque*/
+.zona-hollywood{
+    background-color: gold;
+    color: #000;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 3px;
+}
+.zona-amazonas{
+    background-color: darkolivegreen;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 3px;
+}
 /* Estilo para el pie de página */
 footer {
     background: #333;
