@@ -1,3 +1,91 @@
-main {
-    display: grids;
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.titulo{
+   grid-area: titulo;
+
+}
+
+.medios_contacto {
+    grid-area: medios; 
+    
+}
+
+.ubicacion{
+    grid-area: ubicacion;
+    text-align: center;
+    
+}
+
+main img{
+    border-radius: 5%;
+    width: 600px;
+    height: auto;
+}
+
+
+h2{
+    text-align: left;
+}
+
+.sugerencias{
+    grid-area: sugerencias;
+    
+
+}
+label{
+    display: inline-block;
+}
+
+
+.contenedor{
+    background-color: rgb(227, 227, 227);
+    padding: 20px;    
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+    width: 99%; /* Ancho completo */
+    padding: 10px;
+    margin-bottom: 20px; /* Margen inferior */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde sutil */
+    resize: none; /* No redimensionar */
+}
+input[type="text"] {
+    width: 99%; /* Ancho completo */
+    padding: 10px;
+    margin-bottom: 20px; /* Margen inferior */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde sutil */
+}
+
+input[type="submit"] {
+    background-color: #102334; /* Color de fondo azul */
+    color: white; /* Texto en color blanco */
+    border: none; /* Sin bordes */
+    padding: 10px;
+    cursor: pointer; /* Cursor tipo puntero */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    text-align: center;
+}
+.boton {
+    margin-top: 10px;
+    text-align: center;
+  }
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Color de fondo más claro al pasar el mouse */
+}
+main{
+    display: grid;
+    grid-template-areas: 
+    ' titulo titulo titulo titulo titulo titulo '
+    'medios medios ubicacion ubicacion ubicacion ubicacion'
+    'sugerencias sugerencias sugerencias sugerencias sugerencias sugerencias';
+    grid-gap: 20px;    
 }

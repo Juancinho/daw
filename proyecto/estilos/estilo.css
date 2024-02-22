@@ -201,39 +201,15 @@ button:active {
 
 
 
-  label {
+label {
     display: block; /* Hace que la etiqueta aparezca en una nueva línea */
     margin-bottom: 5px; /* Margen inferior para separar del input */
     font-weight: bold; /* Texto en negrita */
 }
 
-input[type="text"] {
-    width: 100%; /* Ancho completo */
-    padding: 10px;
-    margin-bottom: 20px; /* Margen inferior */
-    border-radius: 5px; /* Bordes redondeados */
-    border: 1px solid #ccc; /* Borde sutil */
-}
 
-input[type="submit"] {
-    background-color: #102334; /* Color de fondo azul */
-    color: white; /* Texto en color blanco */
-    border: none; /* Sin bordes */
-    padding: 10px;
-    cursor: pointer; /* Cursor tipo puntero */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
-}
 
-input[type="submit"]:hover {
-    background-color: #0056b3; /* Color de fondo más claro al pasar el mouse */
-}
 
-/* Estilo específico para el campo de sugerencias con mayor altura */
-#sugerencias {
-    height: 100px; /* Altura ajustada */
-    resize: vertical; /* Permite al usuario ajustar la altura verticalmente */
-}
   
   
   
