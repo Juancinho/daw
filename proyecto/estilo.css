@@ -9,7 +9,7 @@ body {
 /* Estilo para el encabezado */
 header {
     background: #ffffff;
-    padding: 20px 0;
+    
     text-align: center;
 }
 
@@ -36,6 +36,13 @@ nav ul {
 
 nav ul li {
     margin: 0 20px;
+    padding: 1cap;
+    border-radius: 5%;
+}
+
+nav ul li:hover {
+    margin: 0 20px;
+    background-color: #19446a;
 }
 
 nav a {
@@ -113,12 +120,27 @@ footer a {
 /* Estilo para la información legal en el pie de página */
 footer .info-legal {
     margin-left: 10px;
-    text-align: left;
+    text-align: justify;
+    margin-left: 5%;
+    list-style: none;
     background: #333;
     color: #aaa;
     padding: 10px 0;
     font-size: 0.8em;
+    
 }
+caption .titulo_legal{
+    margin-left: 10px;
+    text-align: justify;
+    margin-left: 5%;
+    list-style: none;
+    background: #333;
+    color: #aaa;
+    padding: 10px 0;
+    font-size: 10em;
+
+}
+
 
 /* Estilo para los íconos de redes sociales */
 .social-icons {
