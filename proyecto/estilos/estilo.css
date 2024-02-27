@@ -19,6 +19,10 @@ header img {
     height: auto;
 }
 
+img{
+    border-radius: 15px;
+}
+
 /* Estilo para la navegación */
 nav {
     background: #102334;

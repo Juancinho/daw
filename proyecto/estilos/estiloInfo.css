@@ -1,17 +1,45 @@
 
-
-
 p {
     padding-bottom: 15px;
     border-bottom: 1px solid #eee;
 }
 
 /* Estilos específicos para las imágenes */
-main img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
+/* Estilos específicos para las imágenes dentro de col-md-5 */
+.col-md-5 img {
+    min-width: 99%;
+    max-width: 100%; /* Para asegurarse de que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Para mantener la proporción de aspecto de la imagen */
+    display: block; /* Para evitar espacios adicionales debajo de la imagen */
+    margin: 0 auto; /* Para centrar la imagen horizontalmente */
+    ;
+}
+
+.col-md-5{  
+    background-color: rgb(227, 227, 227);
+    padding: 20px;    
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 5px ;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.col-md-10{  
+    background-color: rgb(227, 227, 227);
+    padding: 20px;    
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 5px ;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.col-md-10 img {
+    min-width: 99%;
+    max-width: 100%; /* Para asegurarse de que la imagen no exceda el ancho del contenedor */
     height: auto;
-    border-radius: 3px;
+    height: auto; /* Para mantener la proporción de aspecto de la imagen */
+    display: block; /* Para evitar espacios adicionales debajo de la imagen */
+    margin: 0 auto; /* Para centrar la imagen horizontalmente */
+    ;
 }
 
