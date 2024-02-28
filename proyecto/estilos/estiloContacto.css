@@ -8,6 +8,17 @@ ul{
 
 }
 
+footer{
+    grid-area: footer;
+}
+
+head{
+    grid-area: head;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
 .titulo{
    grid-area: titulo;
@@ -27,8 +38,9 @@ ul{
 
 main img{
     border-radius: 5%;
-    width: 600px;
+    width: 98%;
     height: auto;
+    max-width: 1200px;
 }
 
 
@@ -46,17 +58,16 @@ label{
 }
 
 
-.contenedor{
+.contenedor{    
     background-color: rgb(227, 227, 227);
     padding: 20px;    
     border-radius: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);    
     
 }
 
 textarea {
-    width: 99%; /* Ancho completo */
+    width: 98%;
     padding: 10px;
     margin-bottom: 20px; /* Margen inferior */
     border-radius: 5px; /* Bordes redondeados */
@@ -64,7 +75,7 @@ textarea {
     resize: none; /* No redimensionar */
 }
 input[type="text"] {
-    width: 99%; /* Ancho completo */
+    width: 98%;
     padding: 10px;
     margin-bottom: 20px; /* Margen inferior */
     border-radius: 5px; /* Bordes redondeados */
@@ -84,15 +95,19 @@ input[type="submit"] {
 .boton {
     margin-top: 10px;
     text-align: center;
-  }
+}
+
 input[type="submit"]:hover {
     background-color: #0056b3; /* Color de fondo más claro al pasar el mouse */
 }
+
 main{
     display: grid;
     grid-template-areas: 
+    'head head head head head head'
     ' titulo titulo titulo titulo titulo titulo '
-    'medios medios ubicacion ubicacion ubicacion ubicacion'
-    'sugerencias sugerencias sugerencias sugerencias sugerencias sugerencias';
+    'medios sugerencias sugerencias sugerencias sugerencias sugerencias'
+    'ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion'
+    'footer footer footer footer footer footer';
     grid-gap: 20px;    
 }
