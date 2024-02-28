@@ -1,4 +1,7 @@
-
+.contenedor{
+    margin-left: auto;
+    margin-right: auto;
+}
 p {
     padding-bottom: 15px;
     border-bottom: 1px solid #eee;
@@ -39,7 +42,7 @@ p {
     height: auto;
     height: auto; /* Para mantener la proporción de aspecto de la imagen */
     display: block; /* Para evitar espacios adicionales debajo de la imagen */
-    margin: 0 auto; /* Para centrar la imagen horizontalmente */
-    ;
+    margin: 0 auto; /* Para centrar la imagen horizontalmente */;
 }
+
 
