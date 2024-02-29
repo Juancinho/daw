@@ -5,7 +5,6 @@ a{
 ul{
     list-style: none;
    
-
 }
 
 footer{
@@ -20,15 +19,26 @@ head{
 }
 
 
+@media screen and (min-width: 100px){
+    .medios_contacto{
+        width: 32%;
+        float:left;
+    }
+
+    .sugerencias{
+        width: 100%;
+        float:right;
+    }
+
+
+}
+
 .titulo{
    grid-area: titulo;
 
 }
 
-.medios_contacto {
-    grid-area: medios; 
-    
-}
+
 
 .ubicacion{
     grid-area: ubicacion;
@@ -48,11 +58,7 @@ h2{
     text-align: left;
 }
 
-.sugerencias{
-    grid-area: sugerencias;
-    
 
-}
 label{
     display: inline-block;
 }
@@ -74,6 +80,7 @@ textarea {
     border: 1px solid #ccc; /* Borde sutil */
     resize: none; /* No redimensionar */
 }
+
 input[type="text"] {
     width: 98%;
     padding: 10px;
@@ -106,7 +113,6 @@ main{
     grid-template-areas: 
     'head head head head head head'
     ' titulo titulo titulo titulo titulo titulo '
-    'medios sugerencias sugerencias sugerencias sugerencias sugerencias'
     'ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion'
     'footer footer footer footer footer footer';
     grid-gap: 20px;    

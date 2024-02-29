@@ -6,6 +6,7 @@
     <title>ScreenWorld Adventure - Parque de Atracciones</title>
     <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="stylesheet" href="estilos/estiloPrincipal.css">
+    <link rel="stylesheet" href="estilos/menu.css"> <!-- Nuevo archivo CSS para el menú desplegable -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!-- Iconos para redes sociales-->
 
@@ -20,56 +21,43 @@
             </figure>
         </a>
         <ul>
-            <li><a>Organiza tu vista</a></li>
-            <ul>
-                <li><a href="atracciones.html">Atracciones</a></li>
-                <li><a href="espectaculos.html">Espectáculos</a></li>
-                <li><a href="restaurantes.html">Restaurantes</a></li>
-            </ul>
-    
+            <li>
+                <a href="#">Organiza tu visita</a> <!-- Enlace principal -->
+                <ul> <!-- Submenú -->
+                    <li><a href="atracciones.html">Atracciones</a></li>
+                    <li><a href="espectaculos.html">Espectáculos</a></li>
+                    <li><a href="restaurantes.html">Restaurantes</a></li>
+                    <li><a href="informacion.html">Información del parque</a></li>
+                    <li><a href="horarios.html">Horarios</a></li>
+                </ul>
+            </li>
             <li><a href="alojamientos.html">Alojamientos</a></li>
-            <li><a href="informacion.html">Información del parque<a></li>            
-            <li><a href="horarios.html">Horarios</a></li>              
-            <li><a href="tarifas.html">Tarifas<a></li>
-            <li><a href="FAQ.html">FAQ<a></li>
+            <li><a href="tarifas.html">Tarifas</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
             <li><a href="contacto.html">Contacto</a></li>
-    
-          </ul>
+        </ul>
     </nav>
 </header>
 
-
-
 <main>
     <h1>¡Bienvenidos a ScreenWorld Adventure, el lugar donde las películas cobran vida!</h1>
-
-
     <div class="contendor">
         <div class="col1">
-            <p> Sumérgete en emocionantes atracciones inspiradas en tus films favoritos,
-                desde espectáculos llenos de acción hasta encuentros con personajes icónicos. 
+            <p>Sumérgete en emocionantes atracciones inspiradas en tus films favoritos,
+                desde espectáculos llenos de acción hasta encuentros con personajes icónicos.
                 Descubre la magia del cine en cada esquina de nuestro parque temático. ¡Prepárate para una experiencia cinematográfica inolvidable!</p>
-
         </div>
-
         <div class="col2">
-            <p> Entra en un mundo donde los sueños se hacen realidad y la diversión no tiene límites. 
-                Desde las emocionantes montañas rusas hasta las atracciones familiares, cada rincón de 
+            <p>Entra en un mundo donde los sueños se hacen realidad y la diversión no tiene límites.
+                Desde las emocionantes montañas rusas hasta las atracciones familiares, cada rincón de
                 nuestro parque está diseñado para transportarte a escenarios icónicos y momentos inolvidables
                 del cine.</p>
         </div>
-   
-    
-   
-   
-   
     </div>
-
-
-        <div class = carrusel>
+    <div class="carrusel">
         <img src="images/index1.jpg" alt="Foto principal 1" width="400" height="250">
-    <img src="images/noria1.jpg" alt="Foto principal 2" width="400" height="250">
-    <img src="images/montanaIndex.jpg" alt="Foto principal 3" width="400" height="250">
+        <img src="images/noria1.jpg" alt="Foto principal 2" width="400" height="250">
+        <img src="images/montanaIndex.jpg" alt="Foto principal 3" width="400" height="250">
     </div>
 </main>
 
@@ -79,23 +67,17 @@
         <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i>@screenworld_es</a>
         <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i>screenworld_es</a>
         <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i>screenworldadventure_es</a>
-        
     </div>
-
     <ul class="info-legal">
         <caption>Información legal</caption>
-        <li>
-            Política de cookies
-        </li>
-        <li>
-            Política de privacidad
-        </li>
-        <li>
-            Condiciones generales
-        </li>              
+        <li>Política de cookies</li>
+        <li>Política de privacidad</li>
+        <li>Condiciones generales</li>
     </ul>
     <p>© 2024 ScreenWorld Adventure. Todos los derechos reservados.</p>
 </footer>
+
+<script src="scripts/menu.js"></script> <!-- Nuevo archivo JavaScript para el menú desplegable -->
 
 </body>
 </html>
