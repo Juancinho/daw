@@ -1,0 +1,43 @@
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center; /* Added this line */
+    
+
+}
+
+
+.tarifa{
+    background-color: rgb(227, 227, 227);
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+    margin-top: 20px;    
+    margin-bottom: 20px;   
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 250px;   
+    
+}
+.familiar{
+    background-color: #A2D4E3;
+}
+
+.gold{
+    background-color: #fae57d;
+}
+.platinum{
+    background-color: #e86666;
+}
+
+button{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+      
+}
