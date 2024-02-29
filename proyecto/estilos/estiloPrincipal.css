@@ -1,0 +1,25 @@
+/* Estilos Base */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Sistema de Cuadrícula Flexible */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre elementos */
+    padding: 20px;
+}
+
+.carrusel img {
+    width: 100%; /* Hace que las imágenes sean flexibles */
+    max-width: 400px; /* Máximo ancho de las imágenes */
+    height: auto;
+}
