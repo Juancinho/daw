@@ -6,10 +6,11 @@ body {
     padding: 20px;
     margin: 0;
 }
+
 /* Estilo para el encabezado */
 header {
     background: #ffffff;
-    
+
     text-align: center;
 }
 
@@ -19,7 +20,7 @@ header img {
     height: auto;
 }
 
-img{
+img {
     border-radius: 15px;
 }
 
@@ -61,25 +62,27 @@ main {
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     align-items: center;
 }
 
-main section{
+main section {
     margin-bottom: 20px;
 }
 
 .carrusel {
     display: flex;
- 
+
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    
+
 }
 
-main article{ /*Esto es para recuadros, cambiar si es necesario*/
-    background:aliceblue;
+main article {
+    /*Esto es para recuadros, cambiar si es necesario*/
+    background-color: rgb(227, 227, 227);
+
     border: 1px solid #e7e7e7;
     padding: 15px;
     margin-bottom: 20px;
@@ -88,7 +91,7 @@ main article{ /*Esto es para recuadros, cambiar si es necesario*/
 
 
 /*Estilo para iconos de zona de parque*/
-.zona{
+.zona {
     color: #fff;
     padding: 5px 10px;
     display: inline-block;
@@ -96,16 +99,25 @@ main article{ /*Esto es para recuadros, cambiar si es necesario*/
     width: fit-content;
     height: fit-content;
 }
-.hollywood{
+
+.hollywood {
     background-color: gold;
     color: #000;
-    
+
 }
-.amazonas{
+
+.amazonas {
     background-color: darkolivegreen;
     color: #fff;
-    
+
 }
+
+.fantasia{
+    background-color: darkorchid;
+    color: #fff;
+
+}
+
 /* Estilo para el pie de página */
 footer {
     background: #333;
@@ -119,6 +131,7 @@ footer a {
     color: #fff;
     text-decoration: none;
 }
+
 /* Estilo para la información legal en el pie de página */
 footer .info-legal {
     margin-left: 10px;
@@ -129,9 +142,10 @@ footer .info-legal {
     color: #aaa;
     padding: 10px 0;
     font-size: 0.8em;
-    
+
 }
-caption .titulo_legal{
+
+caption .titulo_legal {
     margin-left: 10px;
     text-align: justify;
     margin-left: 5%;
@@ -156,62 +170,76 @@ caption .titulo_legal{
 }
 
 .social-icons a {
-    margin: 0 10px; 
+    margin: 0 10px;
     display: inline-block;
     color: #fff;
     text-decoration: none;
 }
-.social-icons i{
-    margin: 0 5px; 
+
+.social-icons i {
+    margin: 0 5px;
     display: inline-block;
-   
+
 }
 
 
-  
+
 
 
 /* Estilo base para el botón */
 button {
-    background-color: #102334; /* Color de fondo azul */
-    border: none; /* Sin bordes */
-    color: white; /* Texto en color blanco */
-    padding: 10px 20px; /* Espaciado interno */
-    text-align: center; /* Texto centrado */
-    text-decoration: none; /* Sin subrayado */
-    display: inline-block; /* Tipo de display */
-    font-size: 16px; /* Tamaño de fuente */
-    margin: 4px 2px; /* Margen exterior */
+    background-color: #102334;
+    /* Color de fondo azul */
+    border: none;
+    /* Sin bordes */
+    color: white;
+    /* Texto en color blanco */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Texto centrado */
+    text-decoration: none;
+    /* Sin subrayado */
+    display: inline-block;
+    /* Tipo de display */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    margin: 4px 2px;
+    /* Margen exterior */
     margin-top: 15px;
-    transition: all 0.3s; /* Transición suave para todas las propiedades */
-    cursor: pointer; /* Cursor tipo puntero */
-    border-radius: 25px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Sombra suave */
-  }
-  
-  /* Estilo para el botón al pasar el mouse (hover) */
+    transition: all 0.3s;
+    /* Transición suave para todas las propiedades */
+    cursor: pointer;
+    /* Cursor tipo puntero */
+    border-radius: 25px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+}
+
+/* Estilo para el botón al pasar el mouse (hover) */
 button:hover {
-    background-color: #0056b3; /* Color de fondo más oscuro */
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Sombra más pronunciada */
-  }
-  
-  /* Estilo para el botón al ser presionado (active) */
+    background-color: #0056b3;
+    /* Color de fondo más oscuro */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    /* Sombra más pronunciada */
+}
+
+/* Estilo para el botón al ser presionado (active) */
 button:active {
-    background-color: #004094; /* Color de fondo aún más oscuro */
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2); /* Sombra ajustada */
-  }
-
-
-
-label {
-    display: block; /* Hace que la etiqueta aparezca en una nueva línea */
-    margin-bottom: 5px; /* Margen inferior para separar del input */
-    font-weight: bold; /* Texto en negrita */
+    background-color: #004094;
+    /* Color de fondo aún más oscuro */
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    /* Sombra ajustada */
 }
 
 
 
-
-  
-  
-  
+label {
+    display: block;
+    /* Hace que la etiqueta aparezca en una nueva línea */
+    margin-bottom: 5px;
+    /* Margen inferior para separar del input */
+    font-weight: bold;
+    /* Texto en negrita */
+}
