@@ -1,6 +1,11 @@
 /* estiloFAQ.css */
 
+.preguntas{
+    column-count: 2;
+}
+
 main h1 {
+    column-count: 1;
     color: #005A9C;
     margin-bottom: 20px;
 }
@@ -24,4 +29,8 @@ main ul li h2 {
 main ul li p {
     margin: 0;
 }
+
+
+
+
 
