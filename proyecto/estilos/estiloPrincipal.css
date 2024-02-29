@@ -1,6 +1,6 @@
 /* Estilos Base */
 
-@media scree and (min-witdth: 600px){
+@media screen and (min-width: 600px){
     .col1{
         width: 32%;
         float:left;
