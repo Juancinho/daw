@@ -1,3 +1,23 @@
+/* Para la animación de aparición */
+.article-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.article-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Para la animación de los botones */
+button {
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
 
 
 
