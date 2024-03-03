@@ -145,6 +145,10 @@ main article {
 
 }
 
+.ficcion {
+    background-color: darkslategray;
+    color: #fff;
+   }
 /* Estilo para el pie de página */
 footer {
     background: #333;
