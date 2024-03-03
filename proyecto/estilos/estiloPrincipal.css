@@ -1,4 +1,37 @@
-/* Estilos Base */
+
+.carrusel {
+    position: relative;
+    max-width: 400px; /* Ancho del carrusel */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carruselContenedorImagenes img {
+    width: 100%;
+    display: none; /* Ocultar todas las imágenes inicialmente */
+}
+
+.botonCarrusel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+.botonCarruselIzquierda {
+    left: 0;
+}
+
+.botonCarruselDerecha {
+    right: 0;
+}
+
+
 
 @media screen and (min-width: 600px){
     .col1{
@@ -36,11 +69,6 @@ main {
     padding: 20px;
 }
 
-.carrusel img {
-    width: 100%; /* Hace que las imágenes sean flexibles */
-    max-width: 400px; /* Máximo ancho de las imágenes */
-    height: auto;
-}
 
 
 
