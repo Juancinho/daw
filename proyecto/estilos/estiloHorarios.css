@@ -1,30 +1,7 @@
-.tabla-horarios {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-.tabla-horarios td {
-    border: 1px solid #ddd;
-    color: black;
-    padding: 8px;
-    text-align: center;
-}
-
-.tabla-horarios th {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-    background-color: #102334;
-    color: white;
-}
-
-.tabla-horarios tr:nth-child(even) {
-    background-color: #f2f2f2; /*Color un poco más oscuro de las filas pares*/
-}
-
-.tabla-horarios tr:hover { 
-    background-color: #ddd; /*Al pasar el cursor por encima hacemos que la fila se oscurezca un poco*/
+a{
+    text-decoration: none;
+    color: #102334;
+    
 }
 
 .tabla-horarios {
@@ -56,11 +33,37 @@
     background-color: #ddd; /*Al pasar el cursor por encima hacemos que la fila se oscurezca un poco*/
 }
 
-@media screen and (min-width: 768px) {
-    article {
-        flex-basis: calc(50% - 20px);
-    }
+.tabla-horarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
+
+.tabla-horarios td {
+    border: 1px solid #ddd;
+    color: black;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabla-horarios th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    background-color: #102334;
+    color: white;
+}
+
+.tabla-horarios tr:nth-child(even) {
+    background-color: #f2f2f2; /*Color un poco más oscuro de las filas pares*/
+}
+
+.tabla-horarios tr:hover { 
+    background-color: #ddd; /*Al pasar el cursor por encima hacemos que la fila se oscurezca un poco*/
+}
+
+
+
 
 @media screen and (min-width: 1024px) {
     .alta{
@@ -72,7 +75,5 @@
         width: 45%;
         float: right;
     }
-
-   
 }
 
