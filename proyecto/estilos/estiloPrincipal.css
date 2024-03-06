@@ -33,19 +33,7 @@
 
 
 
-@media screen and (min-width: 600px){
-    .col1{
-        width: 32%;
-        float:left;
-    }
 
-    .col2{
-        width: 64%;
-        float:right;
-    }
-
-
-}
 
 
 

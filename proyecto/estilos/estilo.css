@@ -19,7 +19,7 @@ header {
 nav ul ul {
     display: none; /* Ocultar los submenús por defecto */
     position: absolute; /* Posición absoluta para superponerlos al menú principal */
-    background-color: #fff; /* Fondo blanco */
+    background-color: #102334; /* Fondo blanco */
     padding: 10px; /* Espaciado interno */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
     z-index: 1; /* Asegurar que estén por encima del contenido */
@@ -31,13 +31,11 @@ nav ul ul li {
     width: 200px; /* Ancho del submenú */
 }
 nav ul ul a {
-    color: #333; /* Color del texto */
+    color: #fff; /* Color del texto */
     padding: 5px 10px; /* Espaciado interno */
     display: block; /* Mostrar como bloque */
 }
-nav ul ul a:hover {
-    background-color: #f4f4f4; /* Cambiar color de fondo al pasar el ratón */
-}
+
 
 
 
