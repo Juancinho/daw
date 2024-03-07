@@ -116,37 +116,9 @@ main article {
 
 
 /*Estilo para iconos de zona de parque*/
-.zona {
-    color: #fff;
-    padding: 5px 10px;
-    display: inline-block;
-    border-radius: 3px;
-    width: fit-content;
-    height: fit-content;
-}
 
-.hollywood {
-    background-color: gold;
-    color: #000;
 
-}
 
-.amazonas {
-    background-color: darkolivegreen;
-    color: #fff;
-
-}
-
-.fantasia{
-    background-color: darkorchid;
-    color: #fff;
-
-}
-
-.ficcion {
-    background-color: darkslategray;
-    color: #fff;
-   }
 /* Estilo para el pie de página */
 footer {
     background: #333;

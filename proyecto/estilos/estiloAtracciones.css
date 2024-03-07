@@ -1,4 +1,37 @@
 
+main {
+    display: grid;
+    grid-template-columns: 45% 33%; /* Cambio: Agregamos una columna para la barra lateral */
+    grid-template-rows: 100px auto ;
+    grid-gap: 20px;
+    
+    
+}
+
+main article{
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 0.5fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    background-color: rgb(227, 227, 227);
+    padding: 20px;
+    padding-top: 10px;  
+    margin-bottom: 20px;   
+    margin-left: none;
+    margin-right: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: fit-content;
+    width: fit-content;
+    min-width: 55%;
+    max-width: none;    
+}  
+
+main h2{
+    grid-column: 1/span 2;
+    grid-row: 1 ;
+
+}
 
 .info-atraccion {    
     color: #fff;
@@ -35,5 +68,33 @@
     background-color: #f2f2f2;
     text-align: center;  
        
+}
+
+.atracciones {
+    grid-column: 1 / span 2;
+}
+
+.sidebar {
+    grid-column: 3; /* Empieza desde la segunda columna */
+    grid-row: 2; /* Empieza desde la segunda fila */
+    background-color: #f9f9f9;   
+    padding: 20px;    
+    border-radius: 10px;
+    margin-top: none;
+    height: fit-content;
+
+}
+
+.sidebar h2 {
+    color: #333;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
 }
 
