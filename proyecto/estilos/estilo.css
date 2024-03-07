@@ -47,7 +47,8 @@ header img {
 }
 
 img {
-    border-radius: 15px;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
 }
 
 /* Estilo para la navegación */
@@ -84,11 +85,11 @@ nav a {
 
 /* Estilo para el contenido principal */
 main {
-    background-color: #ffffff;
+    background-color: #f6f6f6;
     padding: 20px;
     margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(123, 123, 123, 0.1);
     align-items: center;
 }
 
@@ -107,12 +108,19 @@ main section {
 
 main article {
     /*Esto es para recuadros, cambiar si es necesario*/
-    background-color: rgb(227, 227, 227);
-
+    background-color: #ffffff;
     border: 1px solid #e7e7e7;
     padding: 15px;
     margin-bottom: 20px;
-    border-radius: 15px;
+    border-radius: 3%;
+}
+
+.contenedor{
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+    padding: 15px;
+    margin-bottom: 20px;    
+    border-radius: 3%;
 }
 
 
