@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!-- Iconos para redes sociales-->
     <link rel="stylesheet" href="estilos/estiloServicios.css">
     <link rel="stylesheet" href="estilos/estiloAtracciones.css">
+    <script src="scripts/scriptAtracciones.js"></script>
 </head>
 <body>
 
@@ -164,10 +165,10 @@
         <h2>Pirate's Cove</h2>
         <img src="images/pirate.jpg" alt="Pirate's Cove" >
         <div class="info-atraccion familiar" > Familiar </div>
-        <div class="zona medieval"> Medieval </div>   
+        <div class="zona amazonas"> Amazonas </div>   
         <p>
-            Zarpa hacia el mar en una aventura pirata en "Pirate's Cove". Navega por aguas turbulentas, enfrenta
-            tormentas y busca tesoros escondidos en esta emocionante travesía. ¡Una experiencia para toda la familia!
+            Zarpa hacia el mar en una aventura pirata en "Pirate's Cove". Navega por aguas turbulentas de los Piratas del caribe, enfrenta
+            tormentas y busca tesoros escondidos en esta emocionante travesía junto al legendario Jack Sparrow. ¡Una experiencia para toda la familia!
        </p>
        <div class="info-adicional">
             <div >Altura mínima:<br> 1,10m</div>
@@ -210,14 +211,19 @@
 
 
 </div>
-<aside class="sidebar">
+<aside id="sidebar">
     <!-- Contenido de la barra lateral -->
     <h2>Filtros</h2>
+    <textarea id="filtro" placeholder="Buscar atracción por nombre"></textarea>
     <ul>
-    <caption>Zona</caption>
-    <li><button class="botonFiltrarZona hollywood">Hollywood</button></li>
-    <li><button class="botonFiltrarZona fantasia">Fantasía</button></li>
-    <li><button class="botonFiltrarZona amazonas">Amazonas</button></li>
+        <caption>Zona</caption>
+        <li><button class="botonFiltrarZona">Todas</button></li>
+        <li><button class="botonFiltrarZona ficcion">Ciencia Ficción</button></li>
+        <li><button class="botonFiltrarZona medieval">Medieval</button></li>
+        <li><button class="botonFiltrarZona hollywood">Hollywood</button></li>
+        <li><button class="botonFiltrarZona fantasia">Fantasía</button></li>
+        <li><button class="botonFiltrarZona amazonas">Amazonas</button></li>
+        
     </ul>
     <ul>
         <caption>Intensidad</caption>
