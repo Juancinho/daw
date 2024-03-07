@@ -1,36 +1,22 @@
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 300px; /* Cambio: Agregamos una columna para la barra lateral */
+    grid-template-columns: 1fr 1fr 300px;   
     grid-template-rows: auto auto ;
-    grid-gap: 20px;
-    
+    grid-gap: 20px;   
     
 }
+
+
 
 main article{
-    display: grid;
-    grid-template-columns: 2fr 0.5fr 0.5fr 2fr;
-    grid-template-rows: auto auto auto;
-    grid-gap: 10px;
-    background-color: rgb(227, 227, 227);
-    padding: 20px;
-    padding-top: 10px;  
-    margin-bottom: 20px;   
-    margin-left: none;
-    margin-right: none;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    height: fit-content;
-    width: fit-content;
-    min-width: 55%;
-    max-width: none;    
-    
-}  
-
-main img{
-    
+    margin-left: 0%;
+    margin-right: 0%;
+    max-width: 85%;
 }
+
+
+
 
 main h2{
     grid-column: 1/span 3;
@@ -76,7 +62,10 @@ main h2{
 }
 
 .atracciones {
-    grid-column: 1 / span 2;
+    grid-column: 1 /3 ;
+    padding: 0px;
+    margin: 0px;
+    
 }
 
 #sidebar {
@@ -118,4 +107,30 @@ textarea {
     border-radius: 5px; /* Bordes redondeados */
     border: 1px solid #ccc; /* Borde sutil */
     resize: none; /* No redimensionar */
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+    #sidebar {
+
+        grid-row: 1; /* Aparece debajo del contenido principal */
+    }
+    article p{
+        display: none;
+    }
+    article img{
+        grid-row: 1;
+        grid-column: 1;
+        width: 100%;
+        height: auto;
+    }
+    .oculto {
+        display: block; /* Muestra el elemento */
+        height: auto; /* Altura automática */
+        margin-bottom: 20px; /* Margen inferior */
+        padding: 20px; /* Relleno */
+    }
+    
 }
