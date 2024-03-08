@@ -2,7 +2,7 @@ main article{
     display: grid;
     grid-template-columns: 5fr 10fr 1fr;
     grid-template-rows: auto auto auto;
-    grid-gap: 10px;    
+       
     padding: 0%;
     padding-left: 1%; 
     margin-bottom: 20px;  
@@ -40,7 +40,8 @@ article p{
     flex-wrap:wrap;    
     grid-column: 1 / 4;
     grid-row: 3;
-    width: fit-content;   
+    width: fit-content;
+    margin-bottom: 10px;   
     
 }
 

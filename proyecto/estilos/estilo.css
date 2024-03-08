@@ -42,7 +42,7 @@ nav ul ul a {
 
 /* Estilo para la imagen del logo */
 header img {
-    max-width: 100%;
+    
     height: auto;
 }
 
@@ -68,7 +68,7 @@ nav ul {
 
 nav ul li {
     margin: 0 20px;
-    padding: 1cap;
+    padding: 10px;
     border-radius: 5%;
 }
 
@@ -91,6 +91,7 @@ main {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(123, 123, 123, 0.1);
     align-items: center;
+   
 }
 
 main section {

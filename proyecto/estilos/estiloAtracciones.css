@@ -1,7 +1,7 @@
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 0.5fr;   
+    grid-template-columns: 1fr 1fr;   
     grid-template-rows: auto auto ;
     grid-gap: 10px;   
     
@@ -66,6 +66,7 @@ main h2{
     padding: 20px;
     background-color: #f2f2f2;
     text-align: center;  
+    margin-bottom: 20px;
        
 }
 
@@ -91,8 +92,8 @@ main h2{
     background-color: #f9f9f9;   
     padding: 20px;    
     border-radius: 10px;
-    margin-top: none;
-    height: fit-content;
+    margin-top: 0px;
+    height: 98%;
 
 }
 
@@ -117,9 +118,11 @@ main h2{
 }
 
 textarea {
-    width: 98%;
+    width: 90%;
     height: 20px;
     padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px; /* Margen inferior */
     border-radius: 5px; /* Bordes redondeados */
     border: 1px solid #ccc; /* Borde sutil */
@@ -130,7 +133,7 @@ textarea {
 
 @media screen and (max-width: 1224px){
     article .info-adicional{
-        display: none;    
+          grid-row: 2;           
     }
     article .datos-atraccion{
         grid-column: 1/span 3;
@@ -139,20 +142,21 @@ textarea {
         
     }
     article p{
-        overflow: hidden;
-        text-overflow: ellipsis;
-        
+        display: none;
     }
     .zona{
         margin-left: 0;
         margin-right: 100%;
     }
 }
-@media screen and (max-width: 768px) {
+
+/*Pantalla pequeña*/
+@media screen and (max-width: 850px) {
     main {
-        grid-template-columns: 10fr; /* Una sola columna */
+        display: grid;
+        grid-template-columns: 100%; /* Una sola columna */
         grid-template-rows: auto auto auto; /* Tres filas */
-        align-items: center;
+        
     }
     h1{
         grid-row: 1;
@@ -161,19 +165,23 @@ textarea {
         grid-row: 3; 
     }
     #sidebar {
-        display: none;
+        grid-column: 1;
         grid-row: 2; 
         grid-template-rows: auto   auto;
     }
     #sidebar ul {
         display: flex;
     }
-    article{
-        display: flex;
-        flex-direction: column;
-        
+
+    main article{
+        display: grid;
+        grid-template-columns: 1fr 1fr;    
+        grid-template-rows: auto auto; 
+        padding-left: 0%; 
+             
         
     }
+ 
     article p{
         display: none;
     }
@@ -181,33 +189,32 @@ textarea {
         display: none;
     }   
    
-    article img{
-
-        
-       height: 100%;
-       margin:none;
-        padding: none;  
-       object-fit: cover;
+    article img{ 
+       grid-column: 1/span 3; /* Esto colocará la imagen en las dos columnas */
+       grid-row: 2; /* Esto colocará la imagen en la segunda fila */
+       width: 100%;
+       height: 100%; /* Esto hará que la imagen ocupe todo el alto de la fila */
+       object-fit: cover; /* Esto hará que la imagen cubra todo el espacio disponible sin distorsionarse */
        border-top-right-radius: 0;
        border-bottom-left-radius: 3%;   
+       margin-left: 0px;
 
     }
-    .datos-atraccion{
-        display: none;
-        flex-direction: column;
-        flex-wrap: nowrap;
+    article .datos-atraccion{   
+        grid-row: 1;
+        grid-column: 2;     
         align-items: center;
-        margin-right: auto;
-        grid-column: 1;
-        grid-row: 2;
+        margin-right: auto;        
+       
         height: fit-content;
         width: fit-content;
-        border: solid black;
+       
     }
 
     article h2{
-        
-        border: #333 solid  ;
+        grid-column: 1; 
+        margin-left: 20px;   
+       
     }
     
     
