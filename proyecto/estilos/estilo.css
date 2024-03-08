@@ -83,6 +83,9 @@ nav a {
     font-weight: bold;
 }
 
+nav .menu-icon{
+    display: none;
+}
 /* Estilo para el contenido principal */
 main {
     background-color: #f6f6f6;
@@ -113,7 +116,7 @@ main article {
     border: 1px solid #e7e7e7;
     padding: 15px;
     margin-bottom: 20px;
-    border-radius: 3%;
+    border-radius: 3px;
 }
 
 .contenedor{
@@ -121,7 +124,7 @@ main article {
     border: 1px solid #e7e7e7;
     padding: 15px;
     margin-bottom: 20px;    
-    border-radius: 3%;
+    border-radius: 3px;
 }
 
 
@@ -256,3 +259,16 @@ label {
 }
 
 
+@media screen and (max-width: 856px){
+    nav ul li {
+        display: none;
+       
+    }
+    nav .menu-icon{        
+        display: block; 
+        margin-left: 90%;
+        margin-right: 0px;
+    }
+   
+    
+}

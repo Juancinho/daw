@@ -1,7 +1,7 @@
 .contenedor{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 50px;
     align-items: center;
     justify-content: center; /* Added this line */
