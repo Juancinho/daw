@@ -1,274 +1,254 @@
 /* Estilo básico para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
-    color: #102334;
-    background-color: #f4f4f4;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #102334;
+  background-color: #f4f4f4;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* Estilo para el encabezado */
 header {
-    background: #ffffff;
+  background: #ffffff;
 
-    text-align: center;
+  text-align: center;
 }
-
 
 /* Estilos para el menú desplegable */
 nav ul ul {
-    display: none; /* Ocultar los submenús por defecto */
-    position: absolute; /* Posición absoluta para superponerlos al menú principal */
-    background-color: #102334; /* Fondo blanco */
-    padding: 10px; /* Espaciado interno */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    z-index: 1; /* Asegurar que estén por encima del contenido */
+  display: none; /* Ocultar los submenús por defecto */
+  position: absolute; /* Posición absoluta para superponerlos al menú principal */
+  background-color: #102334; /* Fondo blanco */
+  padding: 10px; /* Espaciado interno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  z-index: 1; /* Asegurar que estén por encima del contenido */
 }
 nav ul li:hover > ul {
-    display: block; /* Mostrar submenú cuando se pasa el ratón sobre el elemento principal */
+  display: block; /* Mostrar submenú cuando se pasa el ratón sobre el elemento principal */
 }
 nav ul ul li {
-    width: 200px; /* Ancho del submenú */
+  width: 200px; /* Ancho del submenú */
 }
 nav ul ul a {
-    color: #fff; /* Color del texto */
-    padding: 5px 10px; /* Espaciado interno */
-    display: block; /* Mostrar como bloque */
+  color: #fff; /* Color del texto */
+  padding: 5px 10px; /* Espaciado interno */
+  display: block; /* Mostrar como bloque */
 }
-
-
-
 
 /* Estilo para la imagen del logo */
 header img {
-    
-    height: auto;
+  height: auto;
 }
 
 img {
-    border-top-right-radius: 3%;
-    border-bottom-right-radius: 3%;
+  border-top-right-radius: 3%;
+  border-bottom-right-radius: 3%;
 }
 
 /* Estilo para la navegación */
 nav {
-    background: #102334;
-    color: #fff;
-    padding: 10px 0;
+  background: #102334;
+  color: #fff;
+  padding: 10px 0;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-    margin: 0 20px;
-    padding: 10px;
-    border-radius: 5%;
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 5%;
 }
 
 nav ul li:hover {
-    margin: 0 20px;
-    background-color: #19446a;
+  margin: 0 20px;
+  background-color: #19446a;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-nav .menu-icon{
-    display: none;
-}
 /* Estilo para el contenido principal */
 main {
-    background-color: #f6f6f6;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(123, 123, 123, 0.1);
-    align-items: center;
-   
+  background-color: #f6f6f6;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(123, 123, 123, 0.1);
+  align-items: center;
 }
 
 main section {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .carrusel {
-    display: flex;
+  display: flex;
 
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 main article {
-    
-    background-color: #ffffff;
-    border: 1px solid #e7e7e7;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 3px;
 }
 
-.contenedor{
-    background-color: #ffffff;
-    border: 1px solid #e7e7e7;
-    padding: 15px;
-    margin-bottom: 20px;    
-    border-radius: 3px;
+.contenedor {
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 3px;
 }
-
 
 /*Estilo para iconos de zona de parque*/
 
-
-
 /* Estilo para el pie de página */
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
 
 /* Estilo para los enlaces del pie de página */
 footer a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Estilo para la información legal en el pie de página */
 footer .info-legal {
-    margin-left: 10px;
-    text-align: justify;
-    margin-left: 5%;
-    list-style: none;
-    background: #333;
-    color: #aaa;
-    padding: 10px 0;
-    font-size: 0.8em;
-
+  margin-left: 10px;
+  text-align: justify;
+  margin-left: 5%;
+  list-style: none;
+  background: #333;
+  color: #aaa;
+  padding: 10px 0;
+  font-size: 0.8em;
 }
 
 caption .titulo_legal {
-    margin-left: 10px;
-    text-align: justify;
-    margin-left: 5%;
-    list-style: none;
-    background: #333;
-    color: #aaa;
-    padding: 10px 0;
-    font-size: 10em;
-
+  margin-left: 10px;
+  text-align: justify;
+  margin-left: 5%;
+  list-style: none;
+  background: #333;
+  color: #aaa;
+  padding: 10px 0;
+  font-size: 10em;
 }
-
 
 /* Estilo para los íconos de redes sociales */
 .social-icons {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
 .social-icons li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .social-icons a {
-    margin: 0 10px;
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
+  margin: 0 10px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
 }
 
 .social-icons i {
-    margin: 0 5px;
-    display: inline-block;
-
+  margin: 0 5px;
+  display: inline-block;
 }
-
-
-
-
 
 /* Estilo base para el botón */
 button {
-    background-color: #102334;
-    /* Color de fondo azul */
-    border: none;
-    /* Sin bordes */
-    color: white;
-    /* Texto en color blanco */
-    padding: 10px 20px;
-    /* Espaciado interno */
-    text-align: center;
-    /* Texto centrado */
-    text-decoration: none;
-    /* Sin subrayado */
-    display: inline-block;
-    /* Tipo de display */
-    font-size: 16px;
-    /* Tamaño de fuente */
-    margin: 4px 2px;
-    /* Margen exterior */
-    margin-top: 15px;
-    transition: all 0.3s;
-    /* Transición suave para todas las propiedades */
-    cursor: pointer;
-    /* Cursor tipo puntero */
-    border-radius: 25px;
-    /* Bordes redondeados */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    /* Sombra suave */
+  background-color: #102334;
+  /* Color de fondo azul */
+  border: none;
+  /* Sin bordes */
+  color: white;
+  /* Texto en color blanco */
+  padding: 10px 20px;
+  /* Espaciado interno */
+  text-align: center;
+  /* Texto centrado */
+  text-decoration: none;
+  /* Sin subrayado */
+  display: inline-block;
+  /* Tipo de display */
+  font-size: 16px;
+  /* Tamaño de fuente */
+  margin: 4px 2px;
+  /* Margen exterior */
+  margin-top: 15px;
+  transition: all 0.3s;
+  /* Transición suave para todas las propiedades */
+  cursor: pointer;
+  /* Cursor tipo puntero */
+  border-radius: 25px;
+  /* Bordes redondeados */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* Sombra suave */
 }
 
 /* Estilo para el botón al pasar el mouse (hover) */
 button:hover {
-    background-color: #0056b3;
-    /* Color de fondo más oscuro */
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    /* Sombra más pronunciada */
+  background-color: #0056b3;
+  /* Color de fondo más oscuro */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  /* Sombra más pronunciada */
 }
 
 /* Estilo para el botón al ser presionado (active) */
 button:active {
-    background-color: #004094;
-    /* Color de fondo aún más oscuro */
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-    /* Sombra ajustada */
+  background-color: #004094;
+  /* Color de fondo aún más oscuro */
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  /* Sombra ajustada */
 }
-
-
 
 label {
-    display: block;
-    /* Hace que la etiqueta aparezca en una nueva línea */
-    margin-bottom: 5px;
-    /* Margen inferior para separar del input */
-    font-weight: bold;
-    /* Texto en negrita */
+  display: block;
+  /* Hace que la etiqueta aparezca en una nueva línea */
+  margin-bottom: 5px;
+  /* Margen inferior para separar del input */
+  font-weight: bold;
+  /* Texto en negrita */
 }
 
+@media screen and (max-width: 856px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li:hover {
+    margin: 0 20px;
+    background-color: #19446a;
+  }
 
-@media screen and (max-width: 856px){
-    nav ul li {
-        display: none;
-       
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+    nav ul ul  {
+        align-self: center;
     }
-    nav .menu-icon{        
-        display: block; 
-        margin-left: 90%;
-        margin-right: 0px;
-    }
-   
-    
 }
