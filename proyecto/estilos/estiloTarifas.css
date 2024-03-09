@@ -37,11 +37,10 @@
     background-color: #70dac8;
 }S
 
-button{
-
-    display: block;
+.tarifa button{    
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+    background-color: #f6f6f6;
       
 }

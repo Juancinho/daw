@@ -10,8 +10,7 @@ a{
     margin-bottom: 20px;
 }
 
-.tabla-horarios td {
-    border: 1px solid #ddd;
+.tabla-horarios td {    
     color: black;
     padding: 8px;
     text-align: center;
@@ -47,7 +46,6 @@ a{
 }
 
 .tabla-horarios th {
-    border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
     background-color: #102334;
@@ -74,6 +72,22 @@ a{
     .baja{
         width: 45%;
         float: right;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .alta{
+       width: 45%;
+       float: left;
+    }
+
+    .baja{
+        width: 45%;
+        float: right;
+    }
+
+    .tabla-horario{
+        width: 50%;
     }
 }
 

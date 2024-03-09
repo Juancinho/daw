@@ -110,6 +110,30 @@ main h2{
     margin-bottom: 10px;
 }
 
+
+#sidebar button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 20px;
+
+}
+#sidebar .botonFiltrarZona{
+    background-color: #f6f6f6;
+    border: #ccc 1px solid;
+    color: #333;
+}
+#sidebar .todas{
+    background-color: #102334;
+    /* Color de fondo azul */
+    border: none;
+    /* Sin bordes */
+    color: white;
+}
+
+
+
 .oculto {
     display: none; /* Oculta el elemento */
     height: 0; /* Reduce la altura a cero */
@@ -178,6 +202,9 @@ textarea {
         grid-template-columns: 1fr 1fr;    
         grid-template-rows: auto auto; 
         padding-left: 0%; 
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
              
         
     }
@@ -216,6 +243,15 @@ textarea {
         margin-left: 20px;   
        
     }
+    #sidebar .lista-zonas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+
     
     
 }

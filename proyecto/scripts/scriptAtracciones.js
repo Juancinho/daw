@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 const atraccion = atracciones[i];
                 const zonaAtraccion = atraccion.getElementsByClassName('zona')[0].textContent.trim().toLowerCase();       
                  
-
+                console.log(zonaAtraccion);
+                console.log(zonaSeleccionada);
                 // Comprueba si la zona de la atracción coincide con la zona seleccionada
                 if (zonaAtraccion == zonaSeleccionada || zonaSeleccionada == "todas") {
                     
