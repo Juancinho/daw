@@ -110,7 +110,7 @@ main h2{
     margin-bottom: 10px;
 }
 
-#sidebar ul li .modo{
+#sidebar ul .modo{
     display: none;
 }
 
@@ -157,6 +157,10 @@ textarea {
 }
 
 
+article img{
+    visibility: visible;
+}
+
 
 @media screen and (max-width: 1224px){
     article .info-adicional{
@@ -179,7 +183,11 @@ textarea {
     #sidebar ul .modo{
         display: none;
     }
+    main article img{
+        visibility: visible;
+    }
 }
+
 
 /*Pantalla pequeña*/
 @media screen and (max-width: 850px) {
@@ -203,9 +211,10 @@ textarea {
     #sidebar ul {
         display: flex;
     }
-    #sidebar ul li .modo{
+    #sidebar ul .modo{
         display: inline;
     }
+    
     main article{
        
 
@@ -234,7 +243,7 @@ textarea {
    
     article img{ 
        
-    z-index: 1; /* Hace que la imagen esté por encima del texto */ 
+       z-index: 1; /* Hace que la imagen esté por encima del texto */ 
        grid-column: 1/span 3; /* Esto colocará la imagen en las dos columnas */
        grid-row: 2; /* Esto colocará la imagen en la segunda fila */
        width: 100%;
@@ -243,6 +252,7 @@ textarea {
        border-top-right-radius: 0;
        border-bottom-left-radius: 3%;   
        margin-left: 0px;
+       visibility: visible;
 
     }
     article .datos-atraccion{   
@@ -268,7 +278,6 @@ textarea {
         align-items: center;
         margin-bottom: 20px;
     }
-
 
     
     
