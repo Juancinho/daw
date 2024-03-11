@@ -28,9 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-
-
     for(let i = 0; i < intensidadButton.length; i++) { 
         // Agrega un evento de clic al botón de filtrar por intensidad
         intensidadButton[i].addEventListener('click', (event) => {
@@ -50,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
+    //Botones de filtro por nombre
     filtroInput.addEventListener('input', function() {
         const filtroTexto = filtroInput.value.trim().toLowerCase();
 
@@ -66,5 +63,26 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    // Botones de imagen y descripción
+    const botonImagen = document.getElementById('boton-imagen');
+    console.log(botonImagen);
+    const botonDescripcion = document.getElementById('boton-descripcion');
+    console.log(botonDescripcion);
+    botonImagen.addEventListener('change', function() {
+        console.log('cambio');
+        const imagenes = document.querySelectorAll('main article img');
+        imagenes.forEach(function(imagen) {
+            imagen.style.visibility = 'visible';
+        });
+    });
+
+    botonDescripcion.addEventListener('change', function() {
+        const imagenes = document.querySelectorAll('main article img');
+        imagenes.forEach(function(imagen) {
+            imagen.style.visibility = 'hidden';
+        });
+    });
+        
+
 
 });

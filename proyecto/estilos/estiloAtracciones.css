@@ -10,9 +10,8 @@ main {
 
 
 main article{
-    margin-left: 0%;
-    margin-right: 0%;
-    max-width: 85%;
+    
+    
 }
 
 
@@ -106,10 +105,14 @@ main h2{
     padding: 0;
 }
 
+
 #sidebar ul li {
     margin-bottom: 10px;
 }
 
+#sidebar ul li .modo{
+    display: none;
+}
 
 #sidebar button{
     display: block;
@@ -157,11 +160,11 @@ textarea {
 
 @media screen and (max-width: 1224px){
     article .info-adicional{
-          grid-row: 2;           
+          grid-row: 3;           
     }
     article .datos-atraccion{
         grid-column: 1/span 3;
-        grid-row: 3;  
+        grid-row: 2;  
         justify-content: left ;
         
     }
@@ -171,6 +174,10 @@ textarea {
     .zona{
         margin-left: 0;
         margin-right: 100%;
+    }
+
+    #sidebar ul .modo{
+        display: none;
     }
 }
 
@@ -196,8 +203,12 @@ textarea {
     #sidebar ul {
         display: flex;
     }
-
+    #sidebar ul li .modo{
+        display: inline;
+    }
     main article{
+       
+
         display: grid;
         grid-template-columns: 1fr 1fr;    
         grid-template-rows: auto auto; 
@@ -210,13 +221,20 @@ textarea {
     }
  
     article p{
-        display: none;
+       display: block;
+       grid-column: 1/span 3; /* Esto colocará la imagen en las dos columnas */
+       grid-row: 2; /* Esto colocará la imagen en la segunda fila */
+       z-index: 0;
+       margin: 20px;
+       
     }
     article .info-adicional{
         display: none;
     }   
    
     article img{ 
+       
+    z-index: 1; /* Hace que la imagen esté por encima del texto */ 
        grid-column: 1/span 3; /* Esto colocará la imagen en las dos columnas */
        grid-row: 2; /* Esto colocará la imagen en la segunda fila */
        width: 100%;
