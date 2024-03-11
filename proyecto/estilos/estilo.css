@@ -86,7 +86,7 @@ main {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(123, 123, 123, 0.1);
   align-items: center;
-    width: 100%;
+ 
 }
 
 main section {
@@ -103,7 +103,7 @@ main section {
 
 main article {
   background-color: #ffffff;
-  border: 1px solid #e7e7e7;
+  
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 3px;
