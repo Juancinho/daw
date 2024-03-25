@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const intensidadButton = contenedorBotones.querySelectorAll('.botonFiltrarIntensidad');
     const atracciones = document.querySelectorAll('article');
     const filtroInput = contenedorBotones.querySelector('textarea');
+    const imagenes = document.querySelectorAll('main article img');
+
     // Agrega un evento de clic al botón de filtrar por zona
     for(let i = 0; i < zonaButton.length; i++) {    
         zonaButton[i].addEventListener('click', (event) => {
@@ -47,6 +49,19 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    for(let i = 0; i < imagenes.length; i++) {        
+        imagenes[i].addEventListener('mouseenter', (event) => {
+            const imagenSeleccionada = event.target;            
+            imagenSeleccionada.style.opacity = '0'; // Hacer la imagen transparente en lugar de ocultarla
+        });  
+        
+        imagenes[i].addEventListener('mouseleave', (event) => {
+            const imagenSeleccionada = event.target;            
+            imagenSeleccionada.style.opacity = '1'; // Hacer la imagen visible nuevamente
+        });  
+    }
+    
+
     //Botones de filtro por nombre
     filtroInput.addEventListener('input', function() {
         const filtroTexto = filtroInput.value.trim().toLowerCase();

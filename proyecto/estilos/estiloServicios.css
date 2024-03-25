@@ -1,8 +1,7 @@
 main article{
     display: grid;
     grid-template-columns: 5fr 10fr 1fr;
-    grid-template-rows: auto auto auto;
-       
+    grid-template-rows: auto auto auto;       
     padding: 0%;
     padding-left: 1%; 
     margin-bottom: 20px;  
@@ -10,6 +9,7 @@ main article{
     margin-right: auto; 
     height: fit-content;
     max-width: 80%;   
+
    
 }  
 
@@ -31,7 +31,10 @@ article img{
 article p{
     grid-column: 1 / 4;
     grid-row: 2;
-    text-align: left;
+    text-align: justify;
+    margin: 30px;
+    line-height: 1.5;
+
 }
 
 .info-adicional{

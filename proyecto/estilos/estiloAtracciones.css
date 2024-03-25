@@ -8,15 +8,6 @@ main {
 }
 
 
-
-main article{
-    
-    
-}
-
-
-
-
 main h2{
     grid-column: 1/span 3;
     grid-row: 1 ;
@@ -59,6 +50,7 @@ main h2{
 
 
 .info-adicional div{
+
     margin-right: 20px;
     border: black 1px solid;
     border-radius: 15px;
@@ -67,6 +59,22 @@ main h2{
     text-align: center;  
     margin-bottom: 20px;
        
+}
+
+main article{
+    position: relative; /* Asegura que el posicionamiento absoluto de los elementos internos se base en este contenedor */
+
+}
+.info-adicional{
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 0; /* Coloca el elemento al final del contenedor "article" */
+    left: 0; /* Alinea el elemento a la izquierda del contenedor "article" */
+    right: 0; /* Alinea el elemento a la derecha del contenedor "article" */
+    margin: auto; /* Centra el elemento horizontalmente */
+    z-index: 0; /* Asegura que esté encima del contenido de "article" */ 
+    grid-column: 4;
+    display: flex;
+    flex-direction: column;
 }
 
 .atracciones {
@@ -158,13 +166,14 @@ textarea {
 
 
 article img{
-    visibility: visible;
+    position: relative;
+    z-index: 1;
 }
 
-
+/**/
 @media screen and (max-width: 1224px){
     article .info-adicional{
-          grid-row: 3;           
+        display: none;
     }
     article .datos-atraccion{
         grid-column: 1/span 3;
@@ -173,7 +182,8 @@ article img{
         
     }
     article p{
-        display: none;
+        grid-row: 4;           
+        margin: none;
     }
     .zona{
         margin-left: 0;
