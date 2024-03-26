@@ -1,11 +1,19 @@
 [
     {
       "nombre": "El Salón de la Fama",
-      "detalles": "Este restaurante ofrece una amplia selección de cafés y cócteles inspirados en clásicos del cine. Ideal para los aficionados al séptimo arte."
+      "detalles": "Este restaurante ofrece una amplia selección de cafés y cócteles inspirados en clásicos del cine. Ideal para los aficionados al séptimo arte.",
+      "menu": [
+        {"item": "Café Clásico", "precio": "2.50€"},
+        {"item": "Cóctel de película", "precio": "8.00€"}
+      ]
     },
     {
       "nombre": "Galaxy Diner: Un Viaje Culinario a las Estrellas",
-      "detalles": "Con una decoración que recuerda a las más famosas naves espaciales, este lugar es perfecto para los amantes de la ciencia ficción."
+      "detalles": "Con una decoración que recuerda a las más famosas naves espaciales, este lugar es perfecto para los amantes de la ciencia ficción.",
+      "menu": [
+        {"item": "Hamburguesa Galáctica", "precio": "9.50€"},
+        {"item": "Batido de Meteorito", "precio": "5.00€"}
+      ]
     }
   ]
   
