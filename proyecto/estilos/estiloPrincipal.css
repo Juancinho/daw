@@ -32,6 +32,14 @@
 }
 
 
+main .principal{
+    background-image: url("../images/background_index.jpg");
+    background-size: cover;
+}
+
+main .contenedor{
+    margin: 130px;
+}
 
 
 

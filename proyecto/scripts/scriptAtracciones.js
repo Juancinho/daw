@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     for(let i = 0; i < imagenes.length; i++) {        
         imagenes[i].addEventListener('mouseenter', (event) => {
             const imagenSeleccionada = event.target;            
-            imagenSeleccionada.style.opacity = '0'; // Hacer la imagen transparente en lugar de ocultarla
+            imagenSeleccionada.style.opacity = '0.05'; // Hacer la imagen transparente en lugar de ocultarla
         });  
         
         imagenes[i].addEventListener('mouseleave', (event) => {
