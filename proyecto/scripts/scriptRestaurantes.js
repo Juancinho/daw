@@ -10,14 +10,9 @@ $(document).ready(function() {
             if (detallesRestaurante) {
                 var htmlDetalles = "<p>" + detallesRestaurante.detalles + "</p><ul>";
 
-                // Asegúrate de que detallesRestaurante.menu está definido y es un array
-                if (Array.isArray(detallesRestaurante.menu)) {
-                    detallesRestaurante.menu.forEach(function(item) {
-                        htmlDetalles += "<li>" + item.item + ": " + item.precio + "</li>";
-                    });
-                } else {
-                    console.error("Menu no definido o no es un array");
-                }
+                detallesRestaurante.menu.forEach(function(item) {
+                    htmlDetalles += "<li>" + item.item + ": " + item.precio + "</li>";
+                });
 
                 htmlDetalles += "</ul>";
 
