@@ -1,6 +1,7 @@
 
 main article {
   background-color: #9d99f7;
+  position: relative;
 }
 .detalles-restaurante {
   display: none;
@@ -8,7 +9,6 @@ main article {
   background-color: #f9f9f9;
   border-top: 1px solid #ccc;
 }
-
 
 
 
