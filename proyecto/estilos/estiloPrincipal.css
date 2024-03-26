@@ -32,16 +32,49 @@
 }
 
 
-main .principal{
+main .cabecera{
     background-image: url("../images/background_index.jpg");
+    
+    background-image: linear-gradient(rgba(255, 255, 255, 0),#f6f6f6),url("../images/background_index.jpg");
+    /* Mezcla el gradiente con la imagen de fondo original */
+    
     background-size: cover;
 }
+
+main .atracciones{
+    background: linear-gradient(to bottom, #f6f6f6 50%, rgb(31, 67, 125) 50%);
+    text-align: center;
+
+}
+
 
 main .contenedor{
     margin: 130px;
 }
 
+main .atracciones div{
+    background-color: #ffffff;  
+    padding: 0px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
+main .atracciones div img{
+    height: 180px;
+    width: 100%;
+    margin:none;
+    padding: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border: none;
+}
+main .atracciones div p{
+    margin: 30px;
+}
 
 
 
