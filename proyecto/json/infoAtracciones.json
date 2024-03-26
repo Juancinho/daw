@@ -1,0 +1,24 @@
+{
+    "atracciones": [
+      {
+        "nombre": "Montaña Rusa Espacial",
+        "ubicacion": {
+          "x": 150,
+          "y": 75
+        },
+        "descripcion": "Una emocionante aventura a través del cosmos.",
+        "imagen": "images/montana_espacial.jpg"
+      },
+      {
+        "nombre": "El Mundo de los Dinosaurios",
+        "ubicacion": {
+          "x": 300,
+          "y": 200
+        },
+        "descripcion": "Viaje en el tiempo a la era de los dinosaurios.",
+        "imagen": "images/dinosaurios.jpg"
+      }
+      
+    ]
+  }
+  
