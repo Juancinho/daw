@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Cargar los detalles de los restaurantes al inicio
-    $.getJSON('restaurantes.json', function(restaurantes) {
+    $.getJSON('json/restaurantes.json', function(restaurantes) {
         // Asignar evento click a cada botón "Más detalles"
         $('button').each(function(index) {
             $(this).on('click', function() {
