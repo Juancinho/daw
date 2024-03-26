@@ -6,7 +6,8 @@ main article{
     margin-bottom: 20px; 
     text-align: center;
     background-color: #a6c3ed;
-    height: 650px;   
+    height: 650px;
+    position: relative;
 }  
 
 
@@ -45,7 +46,7 @@ article button{
     grid-column: 3;
     grid-row: 3;
     height: 50px;    
-    position: absolute; 
+    position: absolute;
     bottom: 0; 
     left: 0;
     width: 100%; 

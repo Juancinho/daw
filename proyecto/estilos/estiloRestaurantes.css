@@ -4,9 +4,8 @@ main article {
 }
 
 .botonModal{
-    grid-column: 3;
-    grid-row: 3;
-    width: 200px;
+   
+    width: 50%;
 
 }
 
