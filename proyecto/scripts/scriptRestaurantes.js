@@ -1,15 +1,20 @@
 $(document).ready(function() {
-    // Cargar los detalles de los restaurantes al inicio
-    $.getJSON('json/restaurantes.json', function(restaurantes) {
-        // Asignar evento click a cada botón "Más detalles"
-        $('button').each(function(index) {
-            $(this).on('click', function() {
-                // Aquí asumimos que el índice del botón coincide con el índice del restaurante en el JSON
-                if (restaurantes[index]) {
-                    // Mostrar los detalles en el div correspondiente
-                    $(this).next('.detalles-restaurante').toggle().text(restaurantes[index].detalles);
-                }
+    // Asumiendo que restaurantes.json está estructurado como se describió anteriormente
+    $.getJSON('json/restaurantes.json', function(data) {
+        $('.mas-detalles').click(function() {
+            // Encuentra el restaurante correspondiente en el JSON
+            var nombreRestaurante = $(this).data('restaurante');
+            var detallesRestaurante = data.find(restaurante => restaurante.nombre === nombreRestaurante);
+
+            // Construye el HTML para los detalles
+            var htmlDetalles = "<p>" + detallesRestaurante.detalles + "</p><ul>";
+            detallesRestaurante.menu.forEach(function(item) {
+                htmlDetalles += "<li>" + item.item + ": " + item.precio + "</li>";
             });
+            htmlDetalles += "</ul>";
+
+            // Muestra los detalles debajo del restaurante correspondiente
+            $(this).next('.detalles-restaurante').html(htmlDetalles).slideToggle();
         });
     });
 });
