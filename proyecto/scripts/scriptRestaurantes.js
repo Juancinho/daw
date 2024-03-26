@@ -1,27 +1,15 @@
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get all the buttons that open modals
-var btns = document.getElementsByClassName("botonModal");
-
-// Iterate through the buttons and assign the onclick event to each
-for (var i = 0; i < btns.length; i++) {
-  btns[i].onclick = function() {
-    modal.style.display = "block";
-  }
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+$(document).ready(function() {
+    // Cargar los detalles de los restaurantes al inicio
+    $.getJSON('json/restaurantes.json', function(restaurantes) {
+        // Asignar evento click a cada botón "Más detalles"
+        $('button').each(function(index) {
+            $(this).on('click', function() {
+                // Aquí asumimos que el índice del botón coincide con el índice del restaurante en el JSON
+                if (restaurantes[index]) {
+                    // Mostrar los detalles en el div correspondiente
+                    $(this).next('.detalles-restaurante').toggle().text(restaurantes[index].detalles);
+                }
+            });
+        });
+    });
+});
