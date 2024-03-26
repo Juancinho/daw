@@ -22,7 +22,5 @@ $(document).ready(function() {
                 console.error("Detalles del restaurante no encontrados para: " + nombreRestaurante);
             }
         });
-    }).fail(function(jqXHR, textStatus, errorThrown) {
-        console.error("Error al cargar el JSON: " + textStatus + ", " + errorThrown);
-    });
+    })
 });
