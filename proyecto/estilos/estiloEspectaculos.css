@@ -8,7 +8,7 @@
 
 
 .ui-datepicker-header {
-    background-color: #607D8B; /* Un color más oscuro para el encabezado */
+    background-color: #102334; /* Un color más oscuro para el encabezado */
     color: white; /* Texto en blanco para contraste */
     border-bottom: 1px solid #ccc; /* Separar el encabezado del cuerpo del calendario */
     padding: 10px; /* Espacio interior para más aireación */
@@ -17,7 +17,7 @@
 }
 
 .ui-datepicker-header {
-    background-color: #607D8B; /* Un color más oscuro para el encabezado */
+    background-color: #102334; /* Un color más oscuro para el encabezado */
     color: white; /* Texto en blanco para contraste */
     border-bottom: 1px solid #ccc; /* Separar el encabezado del cuerpo del calendario */
     padding: 10px; /* Espacio interior para más aireación */
