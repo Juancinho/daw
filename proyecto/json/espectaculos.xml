@@ -1,0 +1,10 @@
+<espectaculos>
+  <espectaculo id="cine4d">
+    <fecha>2024-03-29</fecha>
+    <fecha>2024-04-15</fecha>
+  </espectaculo>
+  <espectaculo id="granDesfile">
+    <fecha>2024-03-30</fecha>
+    <fecha>2024-04-20</fecha>
+  </espectaculo>
+</espectaculos>
