@@ -2,7 +2,7 @@
 .carrusel {
     position: relative;
     max-width: 400px; /* Ancho del carrusel */
-    margin: auto;
+    margin: 50px auto 0;
     overflow: hidden;
 }
 
