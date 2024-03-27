@@ -23,12 +23,16 @@ nav ul ul {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
   z-index: 1; /* Asegurar que estén por encima del contenido */
 }
-/*nav ul li:hover > ul {
-  display: block; /* Mostrar submenú cuando se pasa el ratón sobre el elemento principal */
 
-  #submenu{
-    display: none;
-  }
+.submenu {
+  display: none;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+
 nav ul ul li {
   width: 200px; /* Ancho del submenú */
 }
