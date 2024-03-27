@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!-- Iconos para redes sociales-->
     <link rel="stylesheet" href="estilos/estiloContacto.css">
+    <!--API GOOGLE MAPS-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
 </head>
 <body>
 
@@ -43,7 +45,7 @@
 <div class="titulo">    
     <h1>Contacto</h1>
 </div>
-<div class="medios_contacto contenedor " >
+<article class="medios_contacto contenedor" >
     <h2>Medios de contacto</h2>
     <p>Para cualquier duda o consulta, puede ponerse en contacto con nuestro servicio
         de atencion al cliente a través de los siguientes medios:</p>
@@ -65,14 +67,17 @@
         </li> 
     </ul>
     <p>Para enviarnos directamente una sugerencia o reclamación, puede rellenar el formulario inferior.</p>    
-</div>
+</article>
 
-<div class="ubicacion  contenedor">
+<article class="ubicacion  contenedor">
     <h2>Ubicación</h2>
-    <img src="images/ubicacion.jpg" alt="Mapa del parque" >
-</div>
+    <div class="pos-rel ratio-3by1">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4777.508168982646!2d-8.568904818835845!3d42.87362760235827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2effec18eda43f%3A0x5de58c54218f20ff!2sMonte%20de%20Moas%20de%20Abaixo!5e0!3m2!1ses!2ses!4v1711560435270!5m2!1ses!2ses"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  class="pos-abs coords-0 w-100 h-100"></iframe>
+     </div>
+</article>
 
-<div class="sugerencias contenedor  ">
+<article class="sugerencias contenedor  ">
     <form>
     <h2>Sugerencias y reclamaciones</h2> 
     <div>
@@ -83,10 +88,11 @@
         <input type="submit" value="Enviar">
     </div>   
  </form>
-</div>
+</article>
 
 
 </main>
+
 
 
 <footer>
