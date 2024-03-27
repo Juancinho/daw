@@ -17,12 +17,14 @@ p {
 
 
 .col-md-10 img {
-    min-width: 99%;
-    max-width: 100%; /* Para asegurarse de que la imagen no exceda el ancho del contenedor */
+    width: 60%; 
     height: auto;
-    height: auto; /* Para mantener la proporción de aspecto de la imagen */
     display: block; /* Para evitar espacios adicionales debajo de la imagen */
+
     margin: 0 auto; /* Para centrar la imagen horizontalmente */;
 }
 
+article{
+    margin: 20px;
+}
 
