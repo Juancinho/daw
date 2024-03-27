@@ -14,6 +14,22 @@
         {"item": "Hamburguesa Galáctica", "precio": "9.50€"},
         {"item": "Batido de Meteorito", "precio": "5.00€"}
       ]
+    },
+    {
+      "nombre": "La cantina solitaria",
+      "detalles": "Restaurante para los amantes del Western. Las especialidades son:",
+      "menu": [
+        {"item": "Estofado de forastero", "precio": "9.50€"},
+        {"item": "Alitas del Forajido", "precio": "5.00€"}
+      ]
+    },
+    {
+      "nombre": "Refectorio del Terror",
+      "detalles": "Restaurante para los amantes del terror. Las especialidades son:",
+      "menu": [
+        {"item": "Costillas del Cementerio", "precio": "9.50€"},
+        {"item": "Sangría de Drácula", "precio": "5.00€"}
+      ]
     }
   ]
   
