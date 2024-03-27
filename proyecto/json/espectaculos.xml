@@ -1,9 +1,25 @@
 <espectaculos>
   <espectaculo id="cine4d">
-    <fecha>2024-03-29</fecha>
+    <fecha>2024-04-10</fecha>
     <fecha>2024-04-15</fecha>
   </espectaculo>
   <espectaculo id="granDesfile">
+    <fecha>2024-03-30</fecha>
+    <fecha>2024-04-20</fecha>
+  </espectaculo>
+  <espectaculo id="clasicosCine">
+    <fecha>2024-03-30</fecha>
+    <fecha>2024-04-20</fecha>
+  </espectaculo>
+  <espectaculo id="melodiasCine">
+    <fecha>2024-03-30</fecha>
+    <fecha>2024-04-20</fecha>
+  </espectaculo>
+  <espectaculo id="nocheEstrellas">
+    <fecha>2024-03-30</fecha>
+    <fecha>2024-04-20</fecha>
+  </espectaculo>
+  <espectaculo id="heroesVillanos">
     <fecha>2024-03-30</fecha>
     <fecha>2024-04-20</fecha>
   </espectaculo>

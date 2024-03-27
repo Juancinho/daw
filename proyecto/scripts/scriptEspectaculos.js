@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 },
                 onSelect: function(dateText, inst) {
-                    var btnConfirmar = $(this).nextAll('.btn-confirmar').first();
-                    btnConfirmar.show();
+                    elem.value = 'Reserva para: ' + dateText;
+                    
                 }
             });
         });
