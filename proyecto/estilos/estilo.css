@@ -17,16 +17,18 @@ header {
 
 /* Estilos para el menú desplegable */
 nav ul ul {
-  display: none; /* Ocultar los submenús por defecto */
   position: absolute; /* Posición absoluta para superponerlos al menú principal */
   background-color: #102334; /* Fondo blanco */
   padding: 10px; /* Espaciado interno */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
   z-index: 1; /* Asegurar que estén por encima del contenido */
 }
-nav ul li:hover > ul {
+/*nav ul li:hover > ul {
   display: block; /* Mostrar submenú cuando se pasa el ratón sobre el elemento principal */
-}
+
+  #submenu{
+    display: none;
+  }
 nav ul ul li {
   width: 200px; /* Ancho del submenú */
 }
@@ -102,8 +104,9 @@ main section {
 }
 
 main article {
-  background-color: #ffffff;
-  
+  background-color: #ffffff;  
+  border: 1px solid #e7e7e7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 3px;
@@ -114,7 +117,7 @@ main article {
   border: 1px solid #e7e7e7;
   padding: 15px;
   margin-bottom: 20px;
-  border-radius: px;
+  border-radius: 3px;
 }
 
 /*Estilo para iconos de zona de parque*/
@@ -204,7 +207,7 @@ button {
   /* Transición suave para todas las propiedades */
   cursor: pointer;
   /* Cursor tipo puntero */
-  border-radius: 10px;
+  border-radius: 3px;
   /* Bordes redondeados */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   /* Sombra suave */

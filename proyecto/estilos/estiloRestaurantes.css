@@ -2,6 +2,7 @@
 main article {
   background-color: #9d99f7;
   position: relative;
+  padding-bottom: 30px;
 }
 .detalles-restaurante {
   display: none;

@@ -6,8 +6,7 @@
     align-items: center;
     justify-content: center; /* Added this line */
     background-color: #f6f6f6;
-    border: none;
-    
+    border: none;  
     
 
 }
@@ -16,15 +15,23 @@
 .tarifa{
     background-color: #ffffff;
     padding: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;  
+    padding-top: 10px;    
     margin-top: 20px;    
     margin-bottom: 20px;   
-    border-radius: 15px;
+    border-radius: 3px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 250px; 
+    height: auto;
+    position: relative;
     
-    
+}
+
+.tarifa div{
+    margin:30px;
+    border: #575757 solid 0.5px;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 15px;
 }
 .familiar{
     background-color: #588efa;
@@ -35,12 +42,18 @@
 }
 .platinum{
     background-color: #70dac8;
-}S
+}
 
 .tarifa button{    
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    background-color: #f6f6f6;
+   
+    width: 100%;
+    position: absolute;
+    margin: 0px;    
+    margin-top: 20px;
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
       
 }

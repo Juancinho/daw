@@ -10,3 +10,12 @@ $(window).on('scroll', function() {
     });
 });
 
+$(document).ready(function(){
+    // Agrega un evento de despliegue suave al submenú
+    showMenu=(e)=>{e.preventDefault();$("#submenu").slideToggle()};
+    hideMenu=()=>{ $("#submenu").slideUp()};
+  
+
+    
+});
+
