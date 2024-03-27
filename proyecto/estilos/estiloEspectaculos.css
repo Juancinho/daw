@@ -1,4 +1,26 @@
 /*Color de fondo del calendario*/
-#ui-datepicker-div{
-    background-color: white;
+#ui-datepicker-div {
+    background-color: #f9f9f9; /* Un gris claro, por ejemplo */
+    border: 1px solid #ccc; /* Un borde sutil */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra ligera para dar profundidad */
+    border-radius: 5px; /* Bordes redondeados para suavizar la apariencia */
+}
+
+
+.ui-datepicker-header {
+    background-color: #607D8B; /* Un color más oscuro para el encabezado */
+    color: white; /* Texto en blanco para contraste */
+    border-bottom: 1px solid #ccc; /* Separar el encabezado del cuerpo del calendario */
+    padding: 10px; /* Espacio interior para más aireación */
+    border-top-left-radius: 5px; /* Redondear esquinas superiores */
+    border-top-right-radius: 5px;
+}
+
+.ui-datepicker-header {
+    background-color: #607D8B; /* Un color más oscuro para el encabezado */
+    color: white; /* Texto en blanco para contraste */
+    border-bottom: 1px solid #ccc; /* Separar el encabezado del cuerpo del calendario */
+    padding: 10px; /* Espacio interior para más aireación */
+    border-top-left-radius: 5px; /* Redondear esquinas superiores */
+    border-top-right-radius: 5px;
 }
