@@ -3,6 +3,7 @@ main article {
   background-color: #9d99f7;
   position: relative;
   padding-bottom: 30px;
+  z-index: 1
 }
 .detalles-restaurante {
   display: none;
@@ -10,11 +11,13 @@ main article {
   background-color: #f9f9f9;
   border-top: 1px solid #ccc;
   
-  position: relative; /* O `absolute` dependiendo de tu layout */
-  top: 25px;
-  z-index: 1000; /* Un valor alto para asegurar que se muestre por encima de otros elementos */
+
+  top: 100%;
+  position: absolute; /* O `absolute` dependiendo de tu layout */
+  z-index: 10000; /* Un valor alto para asegurar que se muestre por encima de otros elementos */
   /* Otros estilos como background, padding, etc., según sea necesario */
 }
+
 
 
 
