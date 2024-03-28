@@ -1,14 +1,24 @@
 
 .carrusel {
     position: relative;
-    max-width: 400px; /* Ancho del carrusel */
+    max-width: 500px; /* Ancho del carrusel */
     margin: 50px auto 0;
     overflow: hidden;
+    border: none;
+    margin: 130px;
+    padding: 0%;
 }
 
 .carruselContenedorImagenes img {
     width: 100%;
     display: none; /* Ocultar todas las imágenes inicialmente */
+}
+.contenedorCarrusel{
+    background: linear-gradient(to bottom, #ffffff 70%, #2a1763  50%);
+    border:none;
+   
+
+
 }
 
 .botonCarrusel {
@@ -35,21 +45,31 @@
 main .cabecera{
     background-image: url("../images/background_index.jpg");
     
-    background-image: linear-gradient(rgba(255, 255, 255, 0),#f6f6f6),url("../images/background_index.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0),#ffffff),url("../images/background_index.jpg");
     /* Mezcla el gradiente con la imagen de fondo original */
     
     background-size: cover;
+    width: 100%;
+    padding: 100px;
 }
+
 
 main .atracciones{
     background: linear-gradient(to bottom, #f6f6f6 50%, rgb(31, 67, 125) 50%);
-    text-align: center;
-
+    padding: 20px;
+}
+main .atracciones h4{
+    
+    margin-bottom: 50px;
 }
 
 
-main .contenedor{
-    margin: 130px;
+
+
+.titulo{
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 main .atracciones div{
@@ -59,6 +79,7 @@ main .atracciones div{
     border-radius: 3px;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
 }
 
 main .atracciones div img{
@@ -76,7 +97,25 @@ main .atracciones div p{
     margin: 30px;
 }
 
+main #ubicacion{
+    background-color: #545454;
+    color: #e6e6e6;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+   text-align: center;
+   padding: 20px;
+}
 
+iframe{
+    margin: 0 auto; 
+    width: 70%;
+    height:500px;
+}
+
+main #ubicacion h2, p{
+    text-align: left;
+}
 
 
 body, html {
@@ -94,10 +133,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Espacio entre elementos */
-    padding: 20px;
-    
-    
+    gap: 20px; /* Espacio entre elementos */    
 }
 
 

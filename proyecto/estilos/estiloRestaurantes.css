@@ -1,8 +1,10 @@
 
 main article {
-  background-color: #9d99f7;
+  background-color: #f6f6f6;
   position: relative;
   padding-bottom: 30px;
+  margin-bottom: 100px;
+
 }
 .detalles-restaurante {
   display: none;

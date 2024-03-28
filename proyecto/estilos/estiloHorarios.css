@@ -25,17 +25,18 @@ a{
 }
 
 .tabla-horarios tr:nth-child(even) {
-    background-color: #f2f2f2; /*Color un poco más oscuro de las filas pares*/
+    background-color: #969393; /*Color un poco más oscuro de las filas pares*/
 }
 
 .tabla-horarios tr:hover { 
-    background-color: #ddd; /*Al pasar el cursor por encima hacemos que la fila se oscurezca un poco*/
+    background-color: #a23a3a; /*Al pasar el cursor por encima hacemos que la fila se oscurezca un poco*/
 }
 
 .tabla-horarios {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    border: #102334 solid 1px;
 }
 
 .tabla-horarios td {
@@ -53,7 +54,7 @@ a{
 }
 
 .tabla-horarios tr:nth-child(even) {
-    background-color: #f2f2f2; /*Color un poco más oscuro de las filas pares*/
+    background-color: #e1e1e1; /*Color un poco más oscuro de las filas pares*/
 }
 
 .tabla-horarios tr:hover { 
@@ -63,32 +64,66 @@ a{
 
 
 
-@media screen and (min-width: 1024px) {
-    .alta{
-       width: 45%;
-       float: left;
-    }
-
-    .baja{
-        width: 45%;
-        float: right;
-    }
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+p{
+    grid-column: 1/span 2;
+    grid-row: 2;
 }
 
-@media screen and (max-width: 550px) {
+
+.alta{
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+    margin: 20px;
+}
+
+.baja{
+    grid-column: 2;
+    grid-row: 3;
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px;
+}
+
+.especiales{
+    grid-column: 1/span 2;
+    grid-row: 4;
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 960px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+    }
     .alta{
-       width: 45%;
-       float: left;
-    }
-
-    .baja{
-        width: 45%;
-        float: right;
-    }
-
-    .tabla-horario{
-        width: 50%;
+        grid-column: 1;
+        grid-row: 3;
+        text-align: center;
+        margin: 20px;
     }
     
+    .baja{
+        grid-column: 1;
+        grid-row: 4;
+        text-align: center;
+        margin-top: 20px;
+        margin: 20px;
+    }
+    
+    .especiales{
+        grid-column: 1;
+        grid-row: 5;
+        text-align: center;
+        margin-top: 20px;
+        margin: 20px;
+    }
 }
-

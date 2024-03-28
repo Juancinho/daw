@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // Añade cada fecha no disponible al arreglo del espectáculo correspondiente.
             espectaculo.querySelectorAll('fecha').forEach(fecha => {
                 fechasNoDisponibles[idEspectaculo].push(fecha.textContent);
+                console.log(fecha.textContent);
             });
         });
 
