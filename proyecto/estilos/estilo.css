@@ -2,8 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   color: #102334;
-  background-color: #f4f4f4;
-  padding: 0;
+    padding: 0;
   
   
 }
@@ -20,6 +19,10 @@ header {
   width: 100%;
 }
 
+article{
+  background-color: #f6f6f6;
+  box-shadow: #0f0f0f 0px 0px 5px;
+}
 /* Estilos para el menú desplegable */
 nav ul ul {
   position: absolute; /* Posición absoluta para superponerlos al menú principal */

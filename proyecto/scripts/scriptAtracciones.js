@@ -96,8 +96,19 @@ document.addEventListener('DOMContentLoaded', function() {
         imagenes.forEach(function(imagen) {
             imagen.style.visibility = 'hidden';
         });
-    });
-        
+    });    
+    
+    /*PARA IGUALAR ALTURAS*/
+    let contenedores = document.querySelectorAll('article');
 
+    alturas = new Set();
 
+    for(let contenedor of contenedores){
+        alturas.add(contenedor.clientHeight); 
+    }
+    let maxHeight = Math.max(...alturas);
+
+    for(let contenedor of contenedores){
+        contenedor.style.height = maxHeight+'px';
+    }
 });
