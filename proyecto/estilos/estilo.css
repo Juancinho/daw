@@ -29,13 +29,13 @@ nav ul ul {
   z-index: 1; /* Asegurar que estén por encima del contenido */
 }
 
-.submenu {
+#submenu {
   display: none;
 }
-
+/*
 .menu-item:hover .submenu {
   display: block;
-}
+}*/
 
 
 nav ul ul li {
