@@ -1,125 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScreenWorld Adventure - Parque de Atracciones</title>
     <link rel="stylesheet" href="estilos/estilo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!-- Iconos para redes sociales-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Iconos para redes sociales-->
     <link rel="stylesheet" href="estilos/estiloContacto.css">
     <!--API GOOGLE MAPS-->
     <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
 </head>
+
 <body>
 
-<header>
-    <nav>
-        <figure>
-            <a href="index.html">
-            <img src="images/logo.jpg" alt="ScreenWorld Adventure logo" width="200" height="200">
-            </a>
-        </figure>
-        <ul>
-            <li class="menu-item">
-                <a href="#">Organiza tu visita&#9660;</a> <!-- Enlace principal -->
-                <ul class="submenu">
-                  <!-- Submenú -->
-                  <li><a href="atracciones.html">Atracciones</a></li>
-                  <li><a href="espectaculos.html">Espectáculos</a></li>
-                  <li><a href="restaurantes.html">Restaurantes</a></li>
-                </ul>
-              </li>
-            <li><a href="informacion.html">Información del parque</a></li>
-            <li><a href="horarios.html">Horarios</a></li>
-            <li><a href="alojamientos.html">Alojamientos</a></li>
-            <li><a href="tarifas.html">Tarifas</a></li>
-            <li><a href="FAQ.html">FAQ</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+    <header>
+        <nav>
+            <figure>
+                <a href="index.html">
+                    <img src="images/logo.jpg" alt="ScreenWorld Adventure logo" width="200" height="200">
+                </a>
+            </figure>
+            <ul>
+                <li class="menu-item">
+                    <a href="#">Organiza tu visita&#9660;</a> <!-- Enlace principal -->
+                    <ul class="submenu">
+                        <!-- Submenú -->
+                        <li><a href="atracciones.html">Atracciones</a></li>
+                        <li><a href="espectaculos.html">Espectáculos</a></li>
+                        <li><a href="restaurantes.html">Restaurantes</a></li>
+                    </ul>
+                </li>
+                <li><a href="informacion.html">Información del parque</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="alojamientos.html">Alojamientos</a></li>
+                <li><a href="tarifas.html">Tarifas</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <div class="titulo">
+            <h1>Contacto</h1>
+        </div>
+        <article class="medios_contacto contenedor">
+            <h2>Medios de contacto</h2>
+            <p>Para cualquier duda o consulta, puede ponerse en contacto con nuestro servicio
+                de atencion al cliente a través de los siguientes medios:</p>
+            </p>
+            <ul>
+                <li>Teléfono: +34 666999000</li>
+                <li>Correo electrónico: screenworld@gmail.com
+                <li>
+                    <a
+                        href="https://www.google.com/maps/place/USC+~+Escuela+T%C3%A9cnica+Superior+de+Ingenier%C3%ADa/@42.8733994,-8.5684571,17.14z/data=!4m6!3m5!1s0xd2efe72a954b9a9:0x33af61a845699b5d!8m2!3d42.8733396!4d-8.5603879!16s%2Fg%2F12qh01nyx?entry=ttu">
+                        Dirección: C/ Lope Gómez de Marzoa, s/n, Santiago de Compostela, A Coruña </a>
+            </ul>
+            <b>Horarios de atención al cliente:</b>
+            <ul>
+
+                <li>
+                    De lunes a viernes: 10:00 - 19:00
+                </li>
+                <li>
+                    Sábados y domingos: 10:30 - 14:00
+                </li>
+            </ul>
+            <p>Para enviarnos directamente una sugerencia o reclamación, puede rellenar el formulario inferior.</p>
+        </article>
+
+        <article class="ubicacion  contenedor">
+            <h2>Ubicación</h2>
+            <div class="pos-rel ratio-3by1">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4777.508168982646!2d-8.568904818835845!3d42.87362760235827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2effec18eda43f%3A0x5de58c54218f20ff!2sMonte%20de%20Moas%20de%20Abaixo!5e0!3m2!1ses!2ses!4v1711560435270!5m2!1ses!2ses"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    class="pos-abs coords-0 w-100 h-100"></iframe>
+            </div>
+        </article>
+
+        <article class="sugerencias contenedor  ">
+            <form>
+                <h2>Sugerencias y reclamaciones</h2>
+                <div>
+                    <label>E-Mail: </label> <input type="text" class="email">
+                </div>
+                <textarea rows="10" cols="50"></textarea>
+                <div class="boton">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </article>
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="social-icons">
+            <a href="http://www.twitter.com" target="_blank" aria-label="Twitter"><i
+                    class="fab fa-twitter"></i>@screenworldadventure</a>
+            <a href="http://www.instagram.com" target="_blank" aria-label="Instagram"><i
+                    class="fab fa-instagram"></i>@screenworld_es</a>
+            <a href="http://www.facebook.com" target="_blank" aria-label="Facebook"><i
+                    class="fab fa-facebook-f"></i>screenworld_es</a>
+            <a href="http://www.youtube.com" target="_blank" aria-label="YouTube"><i
+                    class="fab fa-youtube"></i>screenworldadventure_es</a>
+
+        </div>
+
+        <ul class="info-legal">
+            <caption>Información legal</caption>
+            <li>
+                Política de cookies
+            </li>
+            <li>
+                Política de privacidad
+            </li>
+            <li>
+                Condiciones generales
+            </li>
         </ul>
-    </nav>
-</header>
-
-
-
-<main>
-<div class="titulo">    
-    <h1>Contacto</h1>
-</div>
-<article class="medios_contacto contenedor" >
-    <h2>Medios de contacto</h2>
-    <p>Para cualquier duda o consulta, puede ponerse en contacto con nuestro servicio
-        de atencion al cliente a través de los siguientes medios:</p>
-    </p>
-    <ul>
-        <li>Teléfono: +34 666999000</li>
-        <li>Correo electrónico: screenworld@gmail.com<li>
-        <a href="https://www.google.com/maps/place/USC+~+Escuela+T%C3%A9cnica+Superior+de+Ingenier%C3%ADa/@42.8733994,-8.5684571,17.14z/data=!4m6!3m5!1s0xd2efe72a954b9a9:0x33af61a845699b5d!8m2!3d42.8733396!4d-8.5603879!16s%2Fg%2F12qh01nyx?entry=ttu">
-            Dirección: C/ Lope Gómez de Marzoa, s/n, Santiago de Compostela, A Coruña  </a>
-    </ul>
-    <b>Horarios de atención al cliente:</b>
-    <ul>
-        
-        <li>
-            De lunes a viernes: 10:00 - 19:00
-        </li>
-        <li>
-            Sábados y domingos: 10:30 - 14:00
-        </li> 
-    </ul>
-    <p>Para enviarnos directamente una sugerencia o reclamación, puede rellenar el formulario inferior.</p>    
-</article>
-
-<article class="ubicacion  contenedor">
-    <h2>Ubicación</h2>
-    <div class="pos-rel ratio-3by1">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4777.508168982646!2d-8.568904818835845!3d42.87362760235827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2effec18eda43f%3A0x5de58c54218f20ff!2sMonte%20de%20Moas%20de%20Abaixo!5e0!3m2!1ses!2ses!4v1711560435270!5m2!1ses!2ses"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  class="pos-abs coords-0 w-100 h-100"></iframe>
-     </div>
-</article>
-
-<article class="sugerencias contenedor  ">
-    <form>
-    <h2>Sugerencias y reclamaciones</h2> 
-    <div>
-    <label>E-Mail: </label> <input type="text" class="email">
-    </div>
-    <textarea rows="10" cols="50"></textarea>  
-    <div class="boton">
-        <input type="submit" value="Enviar">
-    </div>   
- </form>
-</article>
-
-
-</main>
-
-
-
-<footer>
-    <div class="social-icons">
-        <a href="http://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i>@screenworldadventure</a>
-        <a href="http://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i>@screenworld_es</a>
-        <a href="http://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i>screenworld_es</a>
-        <a href="http://www.youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i>screenworldadventure_es</a>
-        
-    </div>
-
-    <ul class="info-legal">
-        <caption>Información legal</caption>
-        <li>
-            Política de cookies
-        </li>
-        <li>
-            Política de privacidad
-        </li>
-        <li>
-            Condiciones generales
-        </li>              
-    </ul>
-    <p>© 2024 ScreenWorld Adventure. Todos los derechos reservados.</p>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="scripts/scriptFadeIn.js"></script>
+        <p>© 2024 ScreenWorld Adventure. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/scriptFadeIn.js"></script>
 </body>
 
 </html>
