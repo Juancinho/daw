@@ -195,6 +195,7 @@ main article{
     border-radius: 10px;
     margin-top: 0px;
     height: 98%;
+    margin-right: 20px;
 
 }
 
@@ -289,12 +290,13 @@ article img{
     }
     main article img{
         visibility: visible;
+
     }
 }
 
 
 /*Pantalla pequeña*/
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 990px) {
     main {
         display: grid;
         grid-template-columns: 100%; /* Una sola columna */
@@ -306,11 +308,14 @@ article img{
     }
     .atracciones {
         grid-row: 3; 
+       
     }
     #sidebar {
         grid-column: 1;
         grid-row: 2; 
         grid-template-rows: auto   auto;
+
+        height: 85%;
     }
     #sidebar ul {
         display: flex;
@@ -329,6 +334,7 @@ article img{
         margin-left: auto;
         margin-right: auto;
         width: 90%;
+        margin-bottom: 60px;
              
         
     }
@@ -351,10 +357,9 @@ article img{
        grid-column: 1/span 3; /* Esto colocará la imagen en las dos columnas */
        grid-row: 2; /* Esto colocará la imagen en la segunda fila */
        width: 100%;
-       height: 100%; /* Esto hará que la imagen ocupe todo el alto de la fila */
        object-fit: cover; /* Esto hará que la imagen cubra todo el espacio disponible sin distorsionarse */
        border-top-right-radius: 0;
-       border-bottom-left-radius: 3%;   
+       border-bottom-left-radius: 3px;   
        margin-left: 0px;
        visibility: visible;
 
@@ -376,6 +381,13 @@ article img{
        
     }
     #sidebar .lista-zonas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    #sidebar .lista-intensidad{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

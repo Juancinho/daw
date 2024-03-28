@@ -99,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });    
     
     /*PARA IGUALAR ALTURAS*/
+    window.addEventListener('resize', function() {
     let contenedores = document.querySelectorAll('article');
 
     alturas = new Set();
@@ -111,4 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
     for(let contenedor of contenedores){
         contenedor.style.height = maxHeight+'px';
     }
+    console.log('La página ha sido redimensionada');
+
+    });
 });
