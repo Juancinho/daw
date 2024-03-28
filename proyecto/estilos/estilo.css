@@ -97,7 +97,6 @@ nav a {
 
 .carrusel {
   display: flex;
-
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
@@ -175,6 +174,9 @@ caption .titulo_legal {
   display: inline-block;
 }
 
+h1, p{
+  margin:30px;
+}
 /* Estilo base para el botón */
 button {
   background-color: #102334;
