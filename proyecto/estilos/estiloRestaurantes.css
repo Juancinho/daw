@@ -4,19 +4,21 @@ main article {
   position: relative;
   padding-bottom: 30px;
   margin-bottom: 100px;
+  flex: 1 0 21%; /* Ajusta según tu diseño */
+  
+
 
 }
+
 .detalles-restaurante {
-  display: none;
+  position: absolute;
+  top: 0; /* Ajustado para empezar en la parte superior del contenedor */
+  bottom: 60px; /* Altura del botón + algún espacio */
+  left: 0;
+  width: 100%; /* Asegura que el ancho llene el contenedor */
   padding: 15px;
   background-color: #f9f9f9;
   border-top: 1px solid #ccc;
-  
-  position: relative; /* O `absolute` dependiendo de tu layout */
-  top: 25px;
-  z-index: 1000; /* Un valor alto para asegurar que se muestre por encima de otros elementos */
-  /* Otros estilos como background, padding, etc., según sea necesario */
+  z-index: 100000; /* Para asegurarse de que se muestre por encima de otros elementos */
+  overflow: auto; /* Permite desplazamiento si el contenido es demasiado largo */
 }
-
-
-

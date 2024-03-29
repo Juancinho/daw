@@ -8,7 +8,7 @@ $(document).ready(function() {
 
             // Comprueba que detallesRestaurante está definido
             if (detallesRestaurante) {
-                var htmlDetalles = "<p>" + detallesRestaurante.detalles + "</p><ul>";
+                var htmlDetalles = "<h3>"+ nombreRestaurante+"</h3><p>" + detallesRestaurante.detalles + "</p><ul>";
 
                 detallesRestaurante.menu.forEach(function(item) {
                     htmlDetalles += "<li>" + item.item + ": " + item.precio + "</li>";
