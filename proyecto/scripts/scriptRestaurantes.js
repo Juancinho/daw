@@ -13,7 +13,7 @@ $(document).ready(function() {
                 detallesRestaurante.menu.forEach(function(item) {
                     htmlDetalles += "<li>" + item.item + ": " + item.precio + "</li>";
                 });
-z
+
                 htmlDetalles += "</ul>";
 
                 // Muestra los detalles debajo del restaurante correspondiente
