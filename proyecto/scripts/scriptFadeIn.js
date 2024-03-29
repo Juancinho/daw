@@ -20,6 +20,5 @@ $(document).ready(function(){
     hideMenu=()=>{ $("#submenu").slideUp()};
   
 
-    
 });
 
