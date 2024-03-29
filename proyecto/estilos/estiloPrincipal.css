@@ -1,4 +1,8 @@
 
+.atracciones a{
+    text-decoration: none;
+    color: #000000;
+}
 .carrusel {
     position: relative;
     max-width: 500px; /* Ancho del carrusel */
@@ -7,18 +11,19 @@
     border: none;
     margin: 130px;
     padding: 0%;
+    transition: 0.5ms linear;
+
 }
 
 .carruselContenedorImagenes img {
     width: 100%;
     display: none; /* Ocultar todas las imágenes inicialmente */
+    transition: 0.5ms linear;
 }
 .contenedorCarrusel{
     background: linear-gradient(to bottom, #ffffff 70%, #2a1763  50%);
     border:none;
    
-
-
 }
 
 .botonCarrusel {
@@ -55,7 +60,7 @@ main .cabecera{
 
 
 main .atracciones{
-    background: linear-gradient(to bottom, #f6f6f6 50%, rgb(31, 67, 125) 50%);
+    background: linear-gradient(to bottom, #ffffff 50%, rgb(31, 67, 125) 50%);
     padding: 20px;
 }
 main .atracciones h4{
@@ -80,6 +85,12 @@ main .atracciones div{
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    transition: 0.5 linear;
+}
+
+main .atracciones .contenedor:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 main .atracciones div img{
@@ -135,7 +146,35 @@ main {
     justify-content: center;
     gap: 20px; /* Espacio entre elementos */    
 }
+@media screen and (max-width: 768px) {
+    main {
+        gap: 40px;
+
+    }
+    .cabecera{
+        font-size: 0.5em;
 
 
+    }
+    main h1{
+        font-size: 1.5em;
+    }
+    main .atracciones  {
+       background: #f6f6f6;
+
+
+    }
+    main .atracciones div{
+        max-width: 400px;
+    }
+    main .atracciones img{
+        max-width: 400px;
+    }
+    .carrusel{
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+}
 
 
