@@ -30,7 +30,7 @@ nav ul ul {
   background-color: #102334; /* Fondo blanco */
   padding: 10px; /* Espaciado interno */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-  z-index: 1; /* Asegurar que estén por encima del contenido */
+  z-index: 10; /* Asegurar que estén por encima del contenido */
 }
 
 #submenu {
