@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         document.querySelectorAll(".reservar-datepicker").forEach(function(inputDate) {
-            var idEspectaculo = inputDate.closest('article').getAttribute('id');
-            var botonConfirmar = inputDate.nextElementSibling;
+            let idEspectaculo = inputDate.closest('article').getAttribute('id');
+            let botonConfirmar = inputDate.nextElementSibling;
 
           
 
             botonConfirmar.onclick = function() {
-                var fechaSeleccionada = inputDate.value;
+                let fechaSeleccionada = inputDate.value;
                 // Verifica si se ha seleccionado una fecha
                 if (!fechaSeleccionada) {
                     alert('Por favor, selecciona una fecha antes de confirmar tu reserva.');

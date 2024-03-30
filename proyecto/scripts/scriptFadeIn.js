@@ -15,10 +15,9 @@ $(document).ready(function(){
     $('.fade-in').css('opacity', 0).each(function(i) {
         $(this).delay(i * 500).animate({'opacity': 1}, 1000);
     });
-    // Agrega un evento de despliegue suave al submenú
+    // Despliegue suave al abrir y cerrar el menú de navegación Organiza tu visita
     showMenu=(e)=>{e.preventDefault();$("#submenu").slideToggle()};
-    hideMenu=()=>{ $("#submenu").slideUp()};
-  
+    hideMenu=>$("#submenu").slideUp(); 
 
 });
 

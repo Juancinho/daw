@@ -72,6 +72,7 @@ main .atracciones div img{
     padding: 0%;
     transition: 0.5ms linear;
     margin-bottom: 20px;
+    
 
 }
 .carruselContenedorImagenes{
@@ -82,8 +83,16 @@ main .atracciones div img{
 }
 .carruselContenedorImagenes img {
     width: 100%;
+    height: 350px;
     display: none; /* Ocultar todas las imágenes inicialmente */
     transition: 0.5ms linear;
+}
+.carruselContenedorTextos h3{
+    color: white;
+    display: none;
+}
+.carruselContenedorTextos{
+    text-align: center  ;
 }
 .contenedor-carrusel{
     background: linear-gradient(to bottom, #ffffff 70%, #2a1763  50%);
@@ -93,7 +102,8 @@ main .atracciones div img{
     margin-left: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 20px;   
+    padding: 20px;  
+    text-align: center; 
 }
 
 .botonCarrusel {
@@ -184,6 +194,14 @@ main .ubicacion h2, p{
     .carrusel{
         width: 60%;
         margin: 0 auto;
+    }
+
+    .carruselContenedorImagenes img{
+        height: 200px;
+    }
+    .carruselContenedorTextos h3{
+        margin-top: 20px;
+        font-size: medium;
     }
     
 }

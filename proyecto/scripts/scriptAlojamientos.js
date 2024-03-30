@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
             // Añade cada fecha no disponible al arreglo del espectáculo correspondiente.
             alojamiento.querySelectorAll('fecha').forEach(fecha => {
                 fechasNoDisponibles[idAlojamiento].push(fecha.textContent);
-                console.log(fecha.textContent);
             });
         });
 
@@ -35,20 +34,19 @@ document.addEventListener("DOMContentLoaded", function() {
         let calendario = document.querySelector('#calendario');
         
         document.querySelector('#boton-reservar').addEventListener('click',function (){
-            console.log('Comprobando datos');
              if(hotelSelector.value === 'Selecciona un hotel' || hotelSelector.value === ''){
-                alert('Por favor, selecciona un hotel.');
+                alert('Por favor, selecciona un hotel. Todos los campos son obligatorios');
             }
             else if(calendario.value === ''){
                 alert('Por favor, selecciona una fecha.');
-                console.log('Por favor, selecciona una fecha.');
+                console.log('Por favor, selecciona una fecha. Todos los campos son obligatorios');
             }
            
             else if(document.querySelector('#personas').value === ''){
-                alert('Por favor, selecciona el número de personas.');
+                alert('Por favor, selecciona el número de personas. Todos los campos son obligatorios');
             }
             else if(document.querySelector('#noches').value === ''){
-                alert('Por favor, selecciona el número de noches.');
+                alert('Por favor, selecciona el número de noches. Todos los campos son obligatorios');
             }
             else{
                 let fechaElegida = new Date(calendario.value);
@@ -57,17 +55,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 let hotel = hotelSelector.value;
                 let idAlojamiento;
                 document.querySelectorAll('option').forEach(option => {
-                    console.log('otion context',option.textContent);
-                    console.log(hotel);
+                   
                     if (option.textContent === hotel) {
                         
                         idAlojamiento = option.getAttribute('id');
                     }
                 });
-                console.log(fechaElegida);
-                console.log(hotel);
-                console.log('id:',idAlojamiento);
-                console.log('fechas no disponibles:',fechasNoDisponibles[idAlojamiento]);
+               
                 let fechasReserva = obtenerFechasEntre(fechaElegida, fechaFin);
                 function obtenerFechasEntre(fechaInicio, fechaFin) {
                     let fechaArray = [];
@@ -86,14 +80,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 for (let i = 0; i < fechasReserva.length; i++) {
                     for (let j = 0; j < fechasNoDisponiblesHotel.length; j++) {
                         if (fechasReserva[i].getTime() === fechasNoDisponiblesHotel[j].getTime()) {
-                            alert(`Lo sentimos, la  fecha ${fechasReserva[i].toISOString().slice(0,10)} no están disponibles para el hotel seleccionado.`);
+                            alert(`Lo sentimos, la  fecha ${fechasReserva[i].toISOString().slice(0,10)} no está disponible para el hotel seleccionado.`);
 
                             return;
                         }   
                     }
                 }        
                 
-                alert('¡Reserva realizada con éxito!');
+                alert(`¡Reserva realizada con éxito! 
+                Hotel: ${hotel}
+                Fecha de entrada: ${fechaElegida.toISOString().slice(0,10)}
+                Fecha de salida: ${fechaFin.toISOString().slice(0,10)}
+                Personas: ${document.querySelector('#personas').value}
+                Noches: ${document.querySelector('#noches').value}                
+                `);
                 
             }
         });
