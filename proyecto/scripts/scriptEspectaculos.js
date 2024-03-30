@@ -1,48 +1,44 @@
-// Espera a que el contenido de la página esté completamente cargado.
 document.addEventListener("DOMContentLoaded", function() {
-    // Usa fetch para cargar el archivo XML que contiene las fechas no disponibles.
     fetch('../json/espectaculos.xml')
-    .then(response => response.text()) // Convierte la respuesta en texto.
-    .then(str => (new window.DOMParser()).parseFromString(str, "text/xml")) // Parsea el texto a XML.
+    .then(response => response.text())
+    .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
     .then(data => {
-        let fechasNoDisponibles = {}; // Objeto para almacenar las fechas no disponibles por espectáculo.
+        let fechasNoDisponibles = {};
         
-        // Recorre cada elemento <espectaculo> en el XML.
         data.querySelectorAll('espectaculo').forEach(espectaculo => {
-            let idEspectaculo = espectaculo.getAttribute('id'); // Obtiene el ID del espectáculo.
-            fechasNoDisponibles[idEspectaculo] = []; // Prepara un arreglo para este espectáculo.
+            let idEspectaculo = espectaculo.getAttribute('id');
+            fechasNoDisponibles[idEspectaculo] = [];
             
-            // Añade cada fecha no disponible al arreglo del espectáculo correspondiente.
             espectaculo.querySelectorAll('fecha').forEach(fecha => {
                 fechasNoDisponibles[idEspectaculo].push(fecha.textContent);
                 console.log(fecha.textContent);
             });
         });
 
-        // Inicializa el datepicker para cada input con la clase .reservar-datepicker.
         document.querySelectorAll(".reservar-datepicker").forEach(function(elem) {
-            var idEspectaculo = elem.closest('article').getAttribute('id'); // Supone que el ID del artículo es el ID del espectáculo.
+            var idEspectaculo = elem.closest('article').getAttribute('id');
             
             $(elem).datepicker({
-                dateFormat: "yy-mm-dd", // Formato de la fecha.
-                minDate: 0, // No permite seleccionar fechas pasadas.
+                dateFormat: "yy-mm-dd",
+                minDate: 0,
                 showButtonPanel: true,
                 beforeShowDay: function(date) {
-                    // Formatea la fecha a string para comparar.
                     var string = jQuery.datepicker.formatDate('yy-mm-dd', date);
-                    // Comprueba si la fecha está en el arreglo de fechas no disponibles.
                     if (fechasNoDisponibles[idEspectaculo] && fechasNoDisponibles[idEspectaculo].indexOf(string) >= 0) {
-                        return [false, "", "No disponible"]; // Marca la fecha como no disponible.
+                        return [false, "", "No disponible"];
                     } else {
-                        return [true, "", "Disponible"]; // Marca la fecha como disponible.
+                        return [true, "", "Disponible"];
                     }
                 },
                 onSelect: function(dateText, inst) {
-                    elem.value = 'Reserva para: ' + dateText;
-                    
+                    if (fechasNoDisponibles[idEspectaculo] && fechasNoDisponibles[idEspectaculo].indexOf(dateText) >= 0) {
+                        alert('La fecha: ' + dateText + ' no está disponible.');
+                    } else {
+                        alert('Reserva correcta para: ' + dateText);
+                    }
                 }
             });
         });
     })
-    .catch(error => console.log('Error al cargar el archivo XML: ', error)); // Captura y registra errores.
+    .catch(error => console.log('Error al cargar el archivo XML: ', error));
 });
