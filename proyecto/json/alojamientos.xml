@@ -11,18 +11,18 @@
     <fecha>2024-03-30</fecha>
     <fecha>2024-04-20</fecha>
   </alojamiento>
-  <alojamiento id="melodiasCine">
+  <alojamiento id="fantasia">
     <fecha>2024-03-30</fecha>
     <fecha>2024-04-20</fecha>
 
     <fecha>2024-04-22</fecha>
   </alojamiento>
-  <alojamiento id="nocheEstrellas">
-    <fecha>2024-03-30</fecha>
+  <alojamiento id="IslaNublar">
+    <fecha>2024-05-10</fecha>
     <fecha>2024-04-20</fecha>
   </alojamiento>
-  <alojamiento id="heroesVillanos">
-    <fecha>2024-03-30</fecha>
+  <alojamiento id="Titanic">
+    <fecha>2024-05-04</fecha>
     <fecha>2024-04-20</fecha>
   </alojamiento>
 </alojamientos>
