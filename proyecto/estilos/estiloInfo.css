@@ -15,6 +15,7 @@ article img {
     margin: 0 auto; /* Para centrar la imagen horizontalmente */;
 }
 
+
 .mapa img{
     width: 50%;
     height: auto;
@@ -44,14 +45,14 @@ article h2{
  .col1{
 
     margin: 20px;
-    width: 33.33%;
+    width: 46%;
     float: left;
 }
 
 
  .col2{
     margin: 20px;
-    width: 33.33%;
+    width: 46%;
     float: right;
 }
 
