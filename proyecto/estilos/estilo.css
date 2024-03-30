@@ -262,7 +262,20 @@ label {
   }
     nav ul ul  {
         align-self: center;
-    }
+  }
+
+  footer .social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+  }
+  footer .info-legal{
+    text-align: center;
+  }
+  footer{
+    text-align: center;
+  }
 }
 
 .fade-in-section {
