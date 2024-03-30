@@ -4,10 +4,16 @@ a{
     
 }
 
+main article{
+    border: none;
+    padding-bottom: 0px;
+    box-shadow: none;
+}
+
 .tabla-horarios {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+   
 }
 
 .tabla-horarios td {    
@@ -35,7 +41,7 @@ a{
 .tabla-horarios {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    
     border: #102334 solid 1px;
 }
 

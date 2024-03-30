@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });    
     
     /*PARA IGUALAR ALTURAS*/
-    window.addEventListener('resize', function() {
+   /* window.addEventListener('resize', function() {
     let contenedores = document.querySelectorAll('article');
 
     alturas = new Set();
@@ -114,5 +114,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     console.log('La página ha sido redimensionada');
 
-    });
+    });*/
 });
