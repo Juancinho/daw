@@ -2,7 +2,7 @@
 
 
 .preguntas{
-    column-count: 2;
+    column-count: 3;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
@@ -26,7 +26,6 @@ main ul li {
     padding-bottom: 30px;
     border-bottom: 1px solid #eee;
 }
-
 main ul li h2 {
     color: #333;
     margin: 0 0 5px 0;
@@ -36,7 +35,14 @@ main ul li p {
     margin: 0;
 }
 
-@media screen and (max-width: 856px){
+@media screen and (max-width: 1644px){
+    .preguntas{
+        column-count: 2;
+    }
+}
+
+
+@media screen and (max-width: 1244px){
     .preguntas{
         column-count: 1;
     }

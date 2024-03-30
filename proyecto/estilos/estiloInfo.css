@@ -4,27 +4,72 @@ p {
     border-bottom: 1px solid #eee;
 }
 
+
+
 /* Estilos específicos para las imágenes */
 /* Estilos específicos para las imágenes dentro de col-md-5 */
-.col-md-5 img {
-    min-width: 99%;
-    max-width: 100%; /* Para asegurarse de que la imagen no exceda el ancho del contenedor */
+article img {
+    width: 100%;
     height: auto; /* Para mantener la proporción de aspecto de la imagen */
     display: block; /* Para evitar espacios adicionales debajo de la imagen */
-    margin: 0 auto; /* Para centrar la imagen horizontalmente */
-    ;
-}
-
-
-.col-md-10 img {
-    width: 60%; 
-    height: auto;
-    display: block; /* Para evitar espacios adicionales debajo de la imagen */
-
     margin: 0 auto; /* Para centrar la imagen horizontalmente */;
 }
 
-article{
+.mapa img{
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.mapa{
+    padding-bottom: 20px;
+}
+.contenedor{
+    width: 60%;
+    height: 100%;
+    clear:both;
+    margin: 0 auto;
+    border:none;
+
+}
+.fila{
+    clear:both;
+    padding: 20px;
+}
+article h2{
     margin: 20px;
 }
 
+
+ .col1{
+
+    margin: 20px;
+    width: 33.33%;
+    float: left;
+}
+
+
+ .col2{
+    margin: 20px;
+    width: 33.33%;
+    float: right;
+}
+
+@media screen and (max-width: 990px) {
+    .col1, .col2{
+        width: 100%;
+        float: none;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    .col1, .col2{
+        width: 100%;
+        float: none;
+    }
+    p{
+        font-size: xx-small;
+    }
+    
+}

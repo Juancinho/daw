@@ -70,7 +70,7 @@ main article{
 
 
 
-main{
+.horarios{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
@@ -105,10 +105,11 @@ p{
 }
 
 @media screen and (max-width: 960px) {
-    main{
-        display: grid;
+    .horarios{
+        display: block;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto;
+        text-align: center;
     }
     .alta{
         grid-column: 1;
