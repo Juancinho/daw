@@ -85,7 +85,7 @@ main .atracciones div img{
     display: none; /* Ocultar todas las imágenes inicialmente */
     transition: 0.5ms linear;
 }
-.contenedorCarrusel{
+.contenedor-carrusel{
     background: linear-gradient(to bottom, #ffffff 70%, #2a1763  50%);
     border:none;
     text-align: center;
@@ -133,7 +133,7 @@ main .atracciones div img{
 
 
 
-main #ubicacion{
+main .ubicacion{
     background-color: #545454;
     color: #e6e6e6;
     width: 100%;
@@ -149,7 +149,7 @@ iframe{
     height:500px;
 }
 
-main #ubicacion h2, p{
+main .ubicacion h2, p{
     text-align: left;
 }
 
