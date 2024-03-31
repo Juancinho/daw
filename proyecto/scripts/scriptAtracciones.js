@@ -11,15 +11,12 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let i = 0; i < zonaButton.length; i++) {
         zonaButton[i].addEventListener('click', (event) => {
             const zonaSeleccionada = event.target.textContent.trim().toLowerCase();
-            console.log(zonaSeleccionada);
 
             // Recorre todos los artículos de las atracciones
             for (let i = 0; i < atracciones.length; i++) {
                 const atraccion = atracciones[i];
                 const zonaAtraccion = atraccion.getElementsByClassName('zona')[0].textContent.trim().toLowerCase();
 
-                console.log(zonaAtraccion);
-                console.log(zonaSeleccionada);
                 // Comprueba si la zona de la atracción coincide con la zona seleccionada
                 if (zonaAtraccion == zonaSeleccionada || zonaSeleccionada == "todas") {
 
@@ -80,11 +77,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     // Botones de imagen y descripción
     const botonImagen = document.getElementById('boton-imagen');
-    console.log(botonImagen);
     const botonDescripcion = document.getElementById('boton-descripcion');
-    console.log(botonDescripcion);
     botonImagen.addEventListener('change', function () {
-        console.log('cambio');
         const imagenes = document.querySelectorAll('main article img');
         imagenes.forEach(function (imagen) {
             imagen.style.visibility = 'visible';
@@ -98,21 +92,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    /*PARA IGUALAR ALTURAS*/
-    /* window.addEventListener('resize', function() {
-     let contenedores = document.querySelectorAll('article');
- 
-     alturas = new Set();
- 
-     for(let contenedor of contenedores){
-         alturas.add(contenedor.clientHeight); 
-     }
-     let maxHeight = Math.max(...alturas);
- 
-     for(let contenedor of contenedores){
-         contenedor.style.height = maxHeight+'px';
-     }
-     console.log('La página ha sido redimensionada');
- 
-     });*/
 });

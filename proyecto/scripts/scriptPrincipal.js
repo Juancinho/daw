@@ -8,9 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Inicialmente, mostrar solo la primera imagen y texto
   textos.forEach((txt, index) => {
-    console.log(txt);
     if (index === 0) {
-      console.log(txt);
       txt.style.display = 'block';
 
     }
