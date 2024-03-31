@@ -14,11 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             });
 
+            // Calcula la fecha de hoy y la formatea para establecer el atributo min
+            const hoy = new Date().toISOString().split('T')[0];
             document.querySelectorAll(".reservar-datepicker").forEach(function (inputDate) {
+                // Establece la fecha mínima a hoy para evitar la selección de fechas pasadas
+                inputDate.setAttribute('min', hoy);
+
                 let idEspectaculo = inputDate.closest('article').getAttribute('id');
                 let botonConfirmar = inputDate.nextElementSibling;
-
-
 
                 botonConfirmar.onclick = function () {
                     let fechaSeleccionada = inputDate.value;

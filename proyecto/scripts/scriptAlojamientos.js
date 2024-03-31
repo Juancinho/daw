@@ -11,6 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Establece la fecha mínima para el calendario con la fecha actual
+    let calendario = document.querySelector('#calendario');
+    const hoy = new Date().toISOString().split('T')[0];
+    calendario.setAttribute('min', hoy);
+
 
     // Usa fetch para cargar el archivo XML que contiene las fechas no disponibles.
     fetch('../json/alojamientos.xml')
