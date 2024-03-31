@@ -3,11 +3,13 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     grid-gap: 10px;
+    padding-bottom: 60px;
 
 }
 main h2 {
     grid-column: 1/span 3;
     grid-row: 1;
+    margin-left: 20px;
 
 }
 
@@ -31,19 +33,15 @@ main article {
 
 
 
-article h2 {
-    grid-column: 1;
-    grid-row: 1;
-}
-
 article img {
     grid-row: 1 / 5;
     grid-column: 4;
     height: 100%;
     width: 300px;
     object-fit: cover;
-    margin: none;
-    padding: none;
+    margin:0px;
+    padding: 0px;
+   
 
 }
 
@@ -53,17 +51,6 @@ article p {
     text-align: justify;
     margin: 30px;
     line-height: 1.5;
-
-}
-
-.info-adicional {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    grid-column: 1 / 4;
-    grid-row: 3;
-    width: fit-content;
-    padding: 20px;
 
 }
 
@@ -81,8 +68,7 @@ article p {
     border-radius: 3px;
     width: fit-content;
     height: fit-content;
-    grid-column: 2;
-    grid-row: 1;
+    
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
 
@@ -97,7 +83,6 @@ article p {
 .datos-atraccion {
     display: flex;
     justify-content: left;
-    padding-right: 0%;
     margin-bottom: 20px;
     grid-column: 3;
     grid-row: 1;
@@ -184,42 +169,35 @@ main article {
 
 .info-adicional {
     position: absolute;
-    /* Posicionamiento absoluto */
     bottom: 0;
-    /* Coloca el elemento al final del contenedor "article" */
     left: 0;
-    /* Alinea el elemento a la izquierda del contenedor "article" */
     right: 0;
-    /* Alinea el elemento a la derecha del contenedor "article" */
-    margin: auto;
-    /* Centra el elemento horizontalmente */
     z-index: 0;
-    /* Asegura que esté encima del contenido de "article" */
     grid-column: 4;
     grid-row: 3;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    width: fit-content;
+    padding: 20px;
+
 }
 
 
-
+/*ESTILO DE LA BARRA LATERAL*/
 #sidebar {
     grid-column: 3;
-    /* Empieza desde la segunda columna */
     grid-row: 2;
-    /* Empieza desde la segunda fila */
     background-color: #f9f9f9;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 3px;
     margin-top: 0px;
     height: 98%;
     margin-right: 20px;
-    margin-right: 30px;
+    margin-right: 30px;}
 
-}
 
-main {
-    padding-bottom: 60px;
-}
 
 #sidebar h2 {
     color: #333;
@@ -266,13 +244,12 @@ main {
 
 .oculto {
     display: none;
-    /* Oculta el elemento */
     height: 0;
-    /* Reduce la altura a cero */
+   
     margin-bottom: 0;
-    /* Elimina el margen inferior */
+    
     padding: 0;
-    /* Elimina el relleno */
+   
 }
 
 textarea {
@@ -281,14 +258,10 @@ textarea {
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
-    /* Margen inferior */
-    border-radius: 5px;
-    /* Bordes redondeados */
+    margin-bottom: 20px;    
+    border-radius: 5px;   
     border: 1px solid #ccc;
-    /* Borde sutil */
     resize: none;
-    /* No redimensionar */
 }
 
 
@@ -297,7 +270,7 @@ article img {
     z-index: 1;
 }
 
-/**/
+/*PANTALLA MEDIANA*/
 @media screen and (max-width: 1224px) {
     main {
         display: grid;
@@ -334,7 +307,13 @@ article img {
         grid-column: 1;
         grid-row: 2;
         height: 85%;
+        width: 80%;
         margin: 0 auto;
+    }
+    #sidebar button{
+        text-align: center;
+        width: 100%;
+        
     }
 
     #sidebar ul {
@@ -343,6 +322,9 @@ article img {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+    }
+    #sidebar li{
+        margin: 10px;
     }
 
     #sidebar ul .modo {
@@ -390,6 +372,22 @@ article img {
 
     #sidebar ul .modo {
         display: inline;
+    }
+
+    #sidebar .lista-zonas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    #sidebar .lista-intensidad {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
     }
 
     main article {
@@ -457,22 +455,7 @@ article img {
 
     }
 
-    #sidebar .lista-zonas {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    #sidebar .lista-intensidad {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
+   
 
 
 }

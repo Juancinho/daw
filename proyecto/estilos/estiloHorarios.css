@@ -111,7 +111,6 @@ p {
 
 @media screen and (max-width: 960px) {
     .horarios {
-        display: block;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto;
         text-align: center;
@@ -140,3 +139,19 @@ p {
         margin: 20px;
     }
 }
+
+@media screen and (max-width: 500px){
+   
+    table{
+        font-size: x-small;
+    }
+} 
+@media screen and (max-width: 320px){
+   
+    table{
+        font-size: xx-small;
+    }
+    .tabla-horarios td, .tabla-horarios th{
+        padding: 0px;
+    }
+} 

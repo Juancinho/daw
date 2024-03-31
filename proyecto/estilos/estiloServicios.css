@@ -11,9 +11,15 @@ main article {
     border-radius: 3px;
 }
 
-main p {
-    margin-bottom: 30px;
+main p{
+   
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    line-height: 1.5;
+
 }
+
 
 .espectaculos,
 .alojamientos,
@@ -24,7 +30,7 @@ main p {
     margin-right: auto;
     margin-left: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(400px,100%), 1fr));
     gap: 3rem;
 }
 
@@ -99,5 +105,17 @@ main .reserva button {
 @media screen and (max-width: 1100px) {
     main .reserva {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width:760px){
+    article p{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:300px){
+    article p{
+    display: none;
     }
 }

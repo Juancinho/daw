@@ -1,7 +1,6 @@
 /* Estilo básico para el cuerpo de la página */
 body {
   font-family: Arial, sans-serif;
-  color: #102334;
   padding: 0;
 
 }
@@ -26,6 +25,7 @@ header {
 article {
   background-color: #f6f6f6;
   box-shadow: #0f0f0f 0px 0px 5px;
+  border-radius: 3px;
 }
 
 /* Estilos para el menú desplegable */
@@ -336,4 +336,11 @@ input[type="button"]:active {
   transform: translateY(0);
   visibility: visible;
   transition-delay: 0s;
+}
+
+@media screen and (max-width: 250px) {
+  header img{
+    width: 100%;
+  }
+  
 }

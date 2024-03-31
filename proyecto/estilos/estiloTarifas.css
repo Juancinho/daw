@@ -59,3 +59,13 @@
     border-top-right-radius: 0%;
 
 }
+
+@media screen and (max-width: 400px) {
+    .tarifa p ,.tarifa div {
+       font-size: x-small;
+    }
+    .tarifa{
+    }
+    
+    
+}
