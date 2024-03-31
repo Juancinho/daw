@@ -1,10 +1,10 @@
 /*Cabecera*/
-main .cabecera{
+main .cabecera {
     background-image: url("../images/background_index.jpg");
-    
-    background-image: linear-gradient(rgba(255, 255, 255, 0),#ffffff),url("../images/background_index.jpg");
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0), #ffffff), url("../images/background_index.jpg");
     /* Mezcla el gradiente con la imagen de fondo original */
-    
+
     background-size: cover;
     width: 100%;
     padding: 100px;
@@ -13,30 +13,31 @@ main .cabecera{
 
 /*Atracciones*/
 
-.atracciones a{
+.atracciones a {
     text-decoration: none;
     color: #000000;
 }
 
-.atracciones .row-atracciones{
+.atracciones .row-atracciones {
     background-color: #ffffff00;
 }
 
-main .atracciones{
+main .atracciones {
     background: linear-gradient(to bottom, #ffffff 50%, rgb(31, 67, 125) 50%);
     padding: 20px;
 }
-main .atracciones h4{   
+
+main .atracciones h4 {
     margin-bottom: 50px;
 }
 
-main .atracciones div p{
+main .atracciones div p {
     margin: 30px;
 }
 
 /*Cada div de atraccion*/
-main .atracciones div{
-    background-color: #f6f6f6;  
+main .atracciones div {
+    background-color: #f6f6f6;
     padding: 0px;
     margin-bottom: 20px;
     border-radius: 3px;
@@ -46,15 +47,15 @@ main .atracciones div{
     transition: 0.5 linear;
 }
 
-main .atracciones .contenedor:hover{
+main .atracciones .contenedor:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-main .atracciones div img{
+main .atracciones div img {
     height: 180px;
     width: 100%;
-    margin:none;
+    margin: none;
     padding: none;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -62,55 +63,63 @@ main .atracciones div img{
     border-bottom-right-radius: 0%;
     border: none;
 }
+
 /*Carrusel*/
 .carrusel {
     position: relative;
-    max-width: 500px; /* Ancho del carrusel */
+    max-width: 500px;
+    /* Ancho del carrusel */
     overflow: hidden;
     margin: 0 auto;
     border: none;
     padding: 0%;
     transition: 0.5ms linear;
     margin-bottom: 20px;
-    
+
 
 }
-.carruselContenedorImagenes{
+
+.carruselContenedorImagenes {
     display: flex;
     width: 100%;
     height: 100%;
-    
+
 }
+
 .carruselContenedorImagenes img {
     width: 100%;
     height: 350px;
-    display: none; /* Ocultar todas las imágenes inicialmente */
+    display: none;
+    /* Ocultar todas las imágenes inicialmente */
     transition: 0.5ms linear;
 }
-.carruselContenedorTextos h3{
+
+.carruselContenedorTextos h3 {
     color: white;
     display: none;
 }
-.carruselContenedorTextos{
-    text-align: center  ;
-}
-.contenedor-carrusel{
-    background: linear-gradient(to bottom, #ffffff 70%, #2a1763  50%);
-    border:none;
+
+.carruselContenedorTextos {
     text-align: center;
-    margin-right: auto; 
+}
+
+.contenedor-carrusel {
+    background: linear-gradient(to bottom, #ffffff 70%, #2a1763 50%);
+    border: none;
+    text-align: center;
+    margin-right: auto;
     margin-left: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 20px;  
-    text-align: center; 
+    padding: 20px;
+    text-align: center;
 }
 
 .botonCarrusel {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     cursor: pointer;
@@ -128,38 +137,33 @@ main .atracciones div img{
 
 
 
-
-
-
-
-
-
-.titulo{
+.titulo {
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 
 
 
-main .ubicacion{
+main .ubicacion {
     background-color: #545454;
     color: #e6e6e6;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-   text-align: center;
-   padding: 20px;
+    text-align: center;
+    padding: 20px;
 }
 
-iframe{
-    margin: 0 auto; 
+iframe {
+    margin: 0 auto;
     width: 70%;
-    height:500px;
+    height: 500px;
 }
 
-main .ubicacion h2, p{
+main .ubicacion h2,
+p {
     text-align: left;
 }
 
@@ -172,38 +176,43 @@ main .ubicacion h2, p{
         gap: 40px;
 
     }
-    .cabecera{
+
+    .cabecera {
         font-size: 0.5em;
 
 
     }
-    main h1{
+
+    main h1 {
         font-size: 1.5em;
     }
-    main .atracciones  {
-       background: #ffffff;
+
+    main .atracciones {
+        background: #ffffff;
 
 
     }
-    main .atracciones div{
+
+    main .atracciones div {
         max-width: 400px;
     }
-    main .atracciones img{
+
+    main .atracciones img {
         max-width: 400px;
     }
-    .carrusel{
+
+    .carrusel {
         width: 60%;
         margin: 0 auto;
     }
 
-    .carruselContenedorImagenes img{
+    .carruselContenedorImagenes img {
         height: 200px;
     }
-    .carruselContenedorTextos h3{
+
+    .carruselContenedorTextos h3 {
         margin-top: 20px;
         font-size: medium;
     }
-    
+
 }
-
-

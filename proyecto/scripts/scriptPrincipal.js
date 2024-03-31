@@ -9,45 +9,45 @@ document.addEventListener('DOMContentLoaded', () => {
   // Inicialmente, mostrar solo la primera imagen y texto
   textos.forEach((txt, index) => {
     console.log(txt);
-      if (index === 0) {
-        console.log(txt);
-        txt.style.display = 'block';  
-              
-      }
+    if (index === 0) {
+      console.log(txt);
+      txt.style.display = 'block';
+
+    }
   });
   imagenes[0].style.display = 'block';
-  
+
   const colores = ['#2a1763', '#131c58', '#58064f'];
-  
+
 
   botonDerecha.addEventListener('click', () => {
-      cambiarImagen('derecha');
+    cambiarImagen('derecha');
   });
 
   botonIzquierda.addEventListener('click', () => {
-      cambiarImagen('izquierda');
+    cambiarImagen('izquierda');
   });
 
   function cambiarImagen(direccion) {
-      // Ocultar la imagen actual
-      imagenes[indiceImagenActual].style.display = 'none';
-      textos[indiceImagenActual].style.display = 'none';
+    // Ocultar la imagen actual
+    imagenes[indiceImagenActual].style.display = 'none';
+    textos[indiceImagenActual].style.display = 'none';
 
-      // Incrementar o decrementar el índice según el botón presionado
-      if (direccion === 'derecha') {
-          indiceImagenActual = (indiceImagenActual + 1) % imagenes.length;
-          
+    // Incrementar o decrementar el índice según el botón presionado
+    if (direccion === 'derecha') {
+      indiceImagenActual = (indiceImagenActual + 1) % imagenes.length;
 
-      } else if (direccion === 'izquierda') {
-          indiceImagenActual = (indiceImagenActual - 1 + imagenes.length) % imagenes.length;
-      }
 
-      // Mostrar la nueva imagen
-      imagenes[indiceImagenActual].style.display = 'block';
-      textos[indiceImagenActual].style.display = 'block';
-      let fondo = `linear-gradient(to bottom, #ffffff 70%, ${colores[indiceImagenActual]}  50%)`;
-      
-      contenedorCarrusel.style.background = fondo;
+    } else if (direccion === 'izquierda') {
+      indiceImagenActual = (indiceImagenActual - 1 + imagenes.length) % imagenes.length;
+    }
+
+    // Mostrar la nueva imagen
+    imagenes[indiceImagenActual].style.display = 'block';
+    textos[indiceImagenActual].style.display = 'block';
+    let fondo = `linear-gradient(to bottom, #ffffff 70%, ${colores[indiceImagenActual]}  50%)`;
+
+    contenedorCarrusel.style.background = fondo;
 
   }
 });

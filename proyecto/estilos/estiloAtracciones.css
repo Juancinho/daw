@@ -1,47 +1,48 @@
-
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr;   
-    grid-template-rows: auto auto ;
-    grid-gap: 10px;   
-    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+
 }
+
 /*ESTILOS RECUADRO ATRACCION*/
-main article{
+main article {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;       
+    grid-template-rows: auto auto auto;
     padding: 0%;
-    padding-left: 1%; 
-    margin-bottom: 20px;  
+    padding-left: 1%;
+    margin-bottom: 20px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     height: max-content;
-    max-width: 70%;   
+    max-width: 70%;
     border-radius: 3px;
-   
-
-   
-}  
 
 
 
-article h2{
-    grid-column: 1;
-    grid-row: 1 ;
 }
 
-article img{
+
+
+article h2 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+article img {
     grid-row: 1 / 5;
-    grid-column: 4;      
+    grid-column: 4;
     height: 100%;
     width: 300px;
     object-fit: cover;
-    margin:none;
+    margin: none;
     padding: none;
-    
+
 }
-article p{
+
+article p {
     grid-column: 1 / 4;
     grid-row: 2;
     text-align: justify;
@@ -50,31 +51,32 @@ article p{
 
 }
 
-.info-adicional{
+.info-adicional {
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;    
+    flex-wrap: wrap;
     grid-column: 1 / 4;
     grid-row: 3;
     width: fit-content;
     padding: 20px;
-    
+
 }
 
 
 
 
-main h2{
+main h2 {
     grid-column: 1/span 3;
-    grid-row: 1 ;
+    grid-row: 1;
 
 }
+
 /*ESTILO INFORMACION DE INTENSIDAD DE ATRACCION*/
-.info-atraccion {    
+.info-atraccion {
     color: #fff;
     padding: 5px 10px;
     margin-top: 20px;
-    margin-left:auto;
+    margin-left: auto;
     display: inline-block;
     border-radius: 3px;
     width: fit-content;
@@ -83,30 +85,33 @@ main h2{
     grid-row: 1;
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
-    
+
 }
-.moderada{
+
+.moderada {
     background-color: royalblue;
 }
-.familiar{
+
+.familiar {
     background-color: green;
 
 }
-.intensa{
+
+.intensa {
     background-color: red;
 }
 
 /*ESTILO ZONA*/
-.zona{
+.zona {
     margin-top: 20px;
-    grid-column: 2 ;
+    grid-column: 2;
     grid-row: 1;
     padding: 5px 10px;
     border-radius: 3px;
     text-align: left;
     width: fit-content;
-    height: fit-content;   
-    border-top-left-radius:0 ;
+    height: fit-content;
+    border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
 
@@ -122,7 +127,7 @@ main h2{
 
 }
 
-.fantasia{
+.fantasia {
     background-color: darkorchid;
     color: #fff;
 
@@ -143,55 +148,65 @@ main h2{
 
 /*ESTILO INFORMACION ALTURA*/
 
-.info-adicional div{
+.info-adicional div {
 
     margin-right: 20px;
     border: black 1px solid;
     border-radius: 15px;
     padding: 20px;
     background-color: #f2f2f2;
-    text-align: center;  
+    text-align: center;
     margin-bottom: 20px;
-       
-}
-
-main article{
-    position: relative; 
 
 }
-.info-adicional{
-    position: absolute; /* Posicionamiento absoluto */
-    bottom: 0; /* Coloca el elemento al final del contenedor "article" */
-    left: 0; /* Alinea el elemento a la izquierda del contenedor "article" */
-    right: 0; /* Alinea el elemento a la derecha del contenedor "article" */
-    margin: auto; /* Centra el elemento horizontalmente */
-    z-index: 0; /* Asegura que esté encima del contenido de "article" */ 
+
+main article {
+    position: relative;
+
+}
+
+.info-adicional {
+    position: absolute;
+    /* Posicionamiento absoluto */
+    bottom: 0;
+    /* Coloca el elemento al final del contenedor "article" */
+    left: 0;
+    /* Alinea el elemento a la izquierda del contenedor "article" */
+    right: 0;
+    /* Alinea el elemento a la derecha del contenedor "article" */
+    margin: auto;
+    /* Centra el elemento horizontalmente */
+    z-index: 0;
+    /* Asegura que esté encima del contenido de "article" */
     grid-column: 4;
     grid-row: 3;
     margin: 0 auto;
 }
 
 .atracciones {
-    grid-column: 1 /3 ;
+    grid-column: 1 /3;
     padding: 0px;
     margin: 0px;
-    
+
 }
 
-.datos-atraccion{
+.datos-atraccion {
     display: flex;
     justify-content: right;
     padding-right: 0%;
     margin-bottom: 20px;
     grid-column: 2;
     grid-row: 1;
-    
+
 }
+
 #sidebar {
-    grid-column: 3; /* Empieza desde la segunda columna */
-    grid-row: 2; /* Empieza desde la segunda fila */
-    background-color: #f9f9f9;   
-    padding: 20px;    
+    grid-column: 3;
+    /* Empieza desde la segunda columna */
+    grid-row: 2;
+    /* Empieza desde la segunda fila */
+    background-color: #f9f9f9;
+    padding: 20px;
     border-radius: 10px;
     margin-top: 0px;
     height: 98%;
@@ -200,8 +215,8 @@ main article{
 
 }
 
-main{
-    padding-bottom:60px ;
+main {
+    padding-bottom: 60px;
 }
 
 #sidebar h2 {
@@ -218,11 +233,11 @@ main{
     margin-bottom: 10px;
 }
 
-#sidebar ul .modo{
+#sidebar ul .modo {
     display: none;
 }
 
-#sidebar button{
+#sidebar button {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -230,12 +245,14 @@ main{
     margin-bottom: 20px;
 
 }
-#sidebar .botonFiltrarZona{
+
+#sidebar .botonFiltrarZona {
     background-color: #f6f6f6;
     border: #ccc 1px solid;
     color: #333;
 }
-#sidebar .todas{
+
+#sidebar .todas {
     background-color: #102334;
     /* Color de fondo azul */
     border: none;
@@ -246,10 +263,14 @@ main{
 
 
 .oculto {
-    display: none; /* Oculta el elemento */
-    height: 0; /* Reduce la altura a cero */
-    margin-bottom: 0; /* Elimina el margen inferior */
-    padding: 0; /* Elimina el relleno */
+    display: none;
+    /* Oculta el elemento */
+    height: 0;
+    /* Reduce la altura a cero */
+    margin-bottom: 0;
+    /* Elimina el margen inferior */
+    padding: 0;
+    /* Elimina el relleno */
 }
 
 textarea {
@@ -258,51 +279,62 @@ textarea {
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px; /* Margen inferior */
-    border-radius: 5px; /* Bordes redondeados */
-    border: 1px solid #ccc; /* Borde sutil */
-    resize: none; /* No redimensionar */
+    margin-bottom: 20px;
+    /* Margen inferior */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    border: 1px solid #ccc;
+    /* Borde sutil */
+    resize: none;
+    /* No redimensionar */
 }
 
 
-article img{
+article img {
     position: relative;
     z-index: 1;
 }
 
 /**/
-@media screen and (max-width: 1224px){
+@media screen and (max-width: 1224px) {
     main {
         display: grid;
-        grid-template-columns: 100%; /* Una sola columna */
-        grid-template-rows: auto auto auto; /* Tres filas */
+        grid-template-columns: 100%;
+        /* Una sola columna */
+        grid-template-rows: auto auto auto;
+        /* Tres filas */
         gap: 20px;
-        
+
     }
-    article .info-adicional{
+
+    article .info-adicional {
         display: none;
     }
-    article .datos-atraccion{
+
+    article .datos-atraccion {
         grid-column: 1/span 3;
-        grid-row: 2;  
-        justify-content: left ;
+        grid-row: 2;
+        justify-content: left;
         display: none;
-        
+
     }
-    article p{
-        grid-row: 4;           
+
+    article p {
+        grid-row: 4;
     }
-    .zona{
+
+    .zona {
         margin-left: 0;
         margin-right: 100%;
     }
-    
-    #sidebar{
+
+    #sidebar {
         grid-column: 1;
         grid-row: 2;
         height: 85%;
         margin: 0 auto;
     }
+
     #sidebar ul {
         display: flex;
         flex-direction: row;
@@ -310,13 +342,15 @@ article img{
         align-items: center;
         justify-content: center;
     }
-    #sidebar ul .modo{
+
+    #sidebar ul .modo {
         display: none;
     }
+
     article {
         padding: 20px;
     }
-   
+
 }
 
 
@@ -324,95 +358,104 @@ article img{
 @media screen and (max-width: 990px) {
     main {
         display: grid;
-        grid-template-columns: 100%; /* Una sola columna */
-        grid-template-rows: auto auto auto; /* Tres filas */
-        
+        grid-template-columns: 100%;
+        /* Una sola columna */
+        grid-template-rows: auto auto auto;
+        /* Tres filas */
+
     }
-    h1{
+
+    h1 {
         grid-row: 1;
     }
+
     .atracciones {
-        grid-row: 3; 
+        grid-row: 3;
         gap: 20px;
-       
+
     }
+
     #sidebar {
         grid-column: 1;
-        grid-row: 2; 
-        grid-template-rows: auto  auto;
+        grid-row: 2;
+        grid-template-rows: auto auto;
         height: 85%;
     }
+
     #sidebar ul {
         display: flex;
     }
-    #sidebar ul .modo{
+
+    #sidebar ul .modo {
         display: inline;
     }
-    
-    main article{
-       
+
+    main article {
+
 
         display: grid;
-        grid-template-columns: 1fr 1fr;    
-        grid-template-rows: min-content auto; 
-        padding-left: 0%; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content auto;
+        padding-left: 0%;
         margin-left: auto;
         margin-right: auto;
         width: 80%;
         margin-bottom: 60px;
-             
-        
-    }
- 
-    article p{
-       display: block;
-       grid-column: 1/span 3; /* Esto colocará la imagen en las dos columnas */
-       grid-row: 2; /* Esto colocará la imagen en la segunda fila */
-       z-index: 0;
-       margin: 20px;
-       
-    }
-    article .info-adicional{
-        display: none;
-    }   
-   
-    article img{ 
-       
-       z-index: 1; /* Hace que la imagen esté por encima del texto */ 
-       grid-column: 1/span 3; /* Esto colocará la imagen en las dos columnas */
-       grid-row: 2; /* Esto colocará la imagen en la segunda fila */
-       width: 100%;
-       object-fit: cover; /* Esto hará que la imagen cubra todo el espacio disponible sin distorsionarse */
-       border-top-right-radius: 0;
-       border-bottom-left-radius: 3px;   
-       margin-left: 0px;
-       visibility: visible;
+
 
     }
-    article .datos-atraccion{   
+
+    article p {
+        display: block;
+        grid-column: 1/span 3;
+        /* Esto colocará la imagen en las dos columnas */
+        grid-row: 2;
+        /* Esto colocará la imagen en la segunda fila */
+        z-index: 0;
+        margin: 20px;
+
+    }
+
+    article .info-adicional {
+        display: none;
+    }
+
+    article img {
+
+        z-index: 1;
+        /* Hace que la imagen esté por encima del texto */
+        grid-column: 1/span 3;
+        /* Esto colocará la imagen en las dos columnas */
+        grid-row: 2;
+        /* Esto colocará la imagen en la segunda fila */
+        width: 100%;
+        object-fit: cover;
+        /* Esto hará que la imagen cubra todo el espacio disponible sin distorsionarse */
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 3px;
+        margin-left: 0px;
+        visibility: visible;
+
+    }
+
+    article .datos-atraccion {
         grid-row: 1;
-        grid-column: 2;     
+        grid-column: 2;
         align-items: center;
-        margin-right: auto;        
-       
+        margin-right: auto;
+
         height: fit-content;
         width: fit-content;
-       
+
     }
 
-    article h2{
-        grid-column: 1; 
-        margin-left: 20px;   
-       
+    article h2 {
+        grid-column: 1;
+        margin-left: 20px;
+
     }
-    #sidebar .lista-zonas{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-    #sidebar .lista-intensidad{
+
+    #sidebar .lista-zonas {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -420,6 +463,14 @@ article img{
         margin-bottom: 20px;
     }
 
-    
-    
+    #sidebar .lista-intensidad {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+
+
 }

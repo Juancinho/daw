@@ -2,10 +2,12 @@
 body {
   font-family: Arial, sans-serif;
   color: #102334;
-    padding: 0;
-  
+  padding: 0;
+
 }
-body, html {
+
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,17 +23,23 @@ header {
   width: 100%;
 }
 
-article{
+article {
   background-color: #f6f6f6;
   box-shadow: #0f0f0f 0px 0px 5px;
 }
+
 /* Estilos para el menú desplegable */
 nav ul ul {
-  position: absolute; /* Posición absoluta para superponerlos al menú principal */
-  background-color: #102334; /* Fondo blanco */
-  padding: 10px; /* Espaciado interno */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-  z-index: 10; /* Asegurar que estén por encima del contenido */
+  position: absolute;
+  /* Posición absoluta para superponerlos al menú principal */
+  background-color: #102334;
+  /* Fondo blanco */
+  padding: 10px;
+  /* Espaciado interno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Sombra */
+  z-index: 10;
+  /* Asegurar que estén por encima del contenido */
 }
 
 #submenu {
@@ -40,12 +48,17 @@ nav ul ul {
 
 
 nav ul ul li {
-  width: 200px; /* Ancho del submenú */
+  width: 200px;
+  /* Ancho del submenú */
 }
+
 nav ul ul a {
-  color: #fff; /* Color del texto */
-  padding: 5px 10px; /* Espaciado interno */
-  display: block; /* Mostrar como bloque */
+  color: #fff;
+  /* Color del texto */
+  padding: 5px 10px;
+  /* Espaciado interno */
+  display: block;
+  /* Mostrar como bloque */
 }
 
 /* Estilo para la imagen del logo */
@@ -109,7 +122,7 @@ nav a {
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 3px;
- 
+
 }
 
 
@@ -174,16 +187,18 @@ caption .titulo_legal {
   display: inline-block;
 }
 
-h1, p{
-  margin:30px;
+h1,
+p {
+  margin: 30px;
 }
 
-h1{
+h1 {
 
   padding-top: 30px;
   padding-bottom: 30px;
 
 }
+
 /* Estilo base para el botón */
 button {
   background-color: #102334;
@@ -244,6 +259,7 @@ label {
   nav ul {
     flex-direction: column;
   }
+
   nav ul li:hover {
     margin: 0 20px;
     background-color: #19446a;
@@ -254,8 +270,9 @@ label {
     text-decoration: none;
     font-weight: bold;
   }
-    nav ul ul  {
-        align-self: center;
+
+  nav ul ul {
+    align-self: center;
   }
 
   footer .social-icons {
@@ -264,10 +281,12 @@ label {
     justify-content: center;
     list-style: none;
   }
-  footer .info-legal{
+
+  footer .info-legal {
     text-align: center;
   }
-  footer{
+
+  footer {
     text-align: center;
   }
 }
@@ -275,11 +294,11 @@ label {
 input[type="button"] {
   grid-column: 3;
   grid-row: 3;
-  height: 50px;    
+  height: 50px;
   position: absolute;
-  bottom: 0; 
+  bottom: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;
   background-color: #102334;
   border: none;
   color: white;
@@ -287,7 +306,8 @@ input[type="button"] {
   text-align: center;
   display: inline-block;
   font-size: 16px;
-  transition: all 0.3s; /* Transición suave para todas las propiedades */
+  transition: all 0.3s;
+  /* Transición suave para todas las propiedades */
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

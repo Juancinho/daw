@@ -1,46 +1,90 @@
 [
-    {
-      "nombre": "El Salón de la Fama",
-      "detalles": "Las especialidades de este restaurante son los cafés y cócteles inspirados en clásicos del cine.",
-      "menu": [
-        {"item": "Café Clásico", "precio": "2.50€"},
-        {"item": "Cóctel de película", "precio": "8.00€"},
-        {"item": "Café de la casa", "precio": "3.00€"},
-        {"item": "Pastel de la casa", "precio": "7.50€"}
-
-      ]
-    },
-    {
-      "nombre": "Galaxy Dinner",
-      "detalles": "Restaurante para los amantes de la ciencia ficción. Las especialidades son:",
-      "menu": [
-        {"item": "Hamburguesa Galáctica", "precio": "9.50€"},
-        {"item": "Batido de Meteorito", "precio": "5.00€"},
-        {"item": "Café Interestelar", "precio": "2.50€"},
-        {"item": "Cóctel de la Galaxia", "precio": "8.00€"}
-
-      ]
-    },
-    {
-      "nombre": "La cantina solitaria",
-      "detalles": "Restaurante para los amantes del Western. Las especialidades son:",
-      "menu": [
-        {"item": "Estofado de forastero", "precio": "9.50€"},
-        {"item": "Alitas del Forajido", "precio": "5.00€"},
-        {"item": "BBQ Ribs", "precio": "22.50€"},
-        {"item": "Hamburguesa western", "precio": "18.00€"}
-      ]
-    },
-    {
-      "nombre": "Refectorio del Terror",
-      "detalles": "Restaurante para los amantes del terror. Las especialidades son:",
-      "menu": [
-        {"item": "Costillas del Cementerio", "precio": "9.50€"},
-        {"item": "Sangría de Drácula", "precio": "5.00€"},
-        {"item": "Chuleta de hombrelobo", "precio": "22.50€"},
-        {"item": "Tarta de zombie", "precio": "8.00€"}
-      ]
-    }
-
-  ]
-  
+  {
+    "nombre": "El Salón de la Fama",
+    "detalles": "Las especialidades de este restaurante son los cafés y cócteles inspirados en clásicos del cine.",
+    "menu": [
+      {
+        "item": "Café Clásico",
+        "precio": "2.50€"
+      },
+      {
+        "item": "Cóctel de película",
+        "precio": "8.00€"
+      },
+      {
+        "item": "Café de la casa",
+        "precio": "3.00€"
+      },
+      {
+        "item": "Pastel de la casa",
+        "precio": "7.50€"
+      }
+    ]
+  },
+  {
+    "nombre": "Galaxy Dinner",
+    "detalles": "Restaurante para los amantes de la ciencia ficción. Las especialidades son:",
+    "menu": [
+      {
+        "item": "Hamburguesa Galáctica",
+        "precio": "9.50€"
+      },
+      {
+        "item": "Batido de Meteorito",
+        "precio": "5.00€"
+      },
+      {
+        "item": "Café Interestelar",
+        "precio": "2.50€"
+      },
+      {
+        "item": "Cóctel de la Galaxia",
+        "precio": "8.00€"
+      }
+    ]
+  },
+  {
+    "nombre": "La cantina solitaria",
+    "detalles": "Restaurante para los amantes del Western. Las especialidades son:",
+    "menu": [
+      {
+        "item": "Estofado de forastero",
+        "precio": "9.50€"
+      },
+      {
+        "item": "Alitas del Forajido",
+        "precio": "5.00€"
+      },
+      {
+        "item": "BBQ Ribs",
+        "precio": "22.50€"
+      },
+      {
+        "item": "Hamburguesa western",
+        "precio": "18.00€"
+      }
+    ]
+  },
+  {
+    "nombre": "Refectorio del Terror",
+    "detalles": "Restaurante para los amantes del terror. Las especialidades son:",
+    "menu": [
+      {
+        "item": "Costillas del Cementerio",
+        "precio": "9.50€"
+      },
+      {
+        "item": "Sangría de Drácula",
+        "precio": "5.00€"
+      },
+      {
+        "item": "Chuleta de hombrelobo",
+        "precio": "22.50€"
+      },
+      {
+        "item": "Tarta de zombie",
+        "precio": "8.00€"
+      }
+    ]
+  }
+]

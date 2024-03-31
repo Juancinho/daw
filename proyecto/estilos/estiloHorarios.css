@@ -1,10 +1,10 @@
-a{
+a {
     text-decoration: none;
     color: #102334;
-    
+
 }
 
-main article{
+main article {
     border: none;
     padding-bottom: 0px;
     box-shadow: none;
@@ -13,17 +13,17 @@ main article{
 .tabla-horarios {
     width: 100%;
     border-collapse: collapse;
-   
+
 }
 
-.tabla-horarios td {    
+.tabla-horarios td {
     color: black;
     padding: 8px;
     text-align: center;
 }
 
 .tabla-horarios th {
-    
+
     padding: 8px;
     text-align: center;
     background-color: #102334;
@@ -31,22 +31,24 @@ main article{
 }
 
 .tabla-horarios tr:nth-child(even) {
-    background-color: #969393; /*Color un poco más oscuro de las filas pares*/
+    background-color: #969393;
+    /*Color un poco más oscuro de las filas pares*/
 }
 
-.tabla-horarios tr:hover { 
-    background-color: #a23a3a; /*Al pasar el cursor por encima hacemos que la fila se oscurezca un poco*/
+.tabla-horarios tr:hover {
+    background-color: #a23a3a;
+    /*Al pasar el cursor por encima hacemos que la fila se oscurezca un poco*/
 }
 
 .tabla-horarios {
     width: 100%;
     border-collapse: collapse;
-    
+
     border: #102334 solid 1px;
 }
 
 .tabla-horarios td {
-    
+
     color: black;
     padding: 8px;
     text-align: center;
@@ -60,35 +62,38 @@ main article{
 }
 
 .tabla-horarios tr:nth-child(even) {
-    background-color: #e1e1e1; /*Color un poco más oscuro de las filas pares*/
+    background-color: #e1e1e1;
+    /*Color un poco más oscuro de las filas pares*/
 }
 
-.tabla-horarios tr:hover { 
-    background-color: #ddd; /*Al pasar el cursor por encima hacemos que la fila se oscurezca un poco*/
+.tabla-horarios tr:hover {
+    background-color: #ddd;
+    /*Al pasar el cursor por encima hacemos que la fila se oscurezca un poco*/
 }
 
 
 
 
-.horarios{
+.horarios {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
 }
-p{
+
+p {
     grid-column: 1/span 2;
     grid-row: 2;
 }
 
 
-.alta{
+.alta {
     grid-column: 1;
     grid-row: 3;
     text-align: center;
     margin: 20px;
 }
 
-.baja{
+.baja {
     grid-column: 2;
     grid-row: 3;
     text-align: center;
@@ -96,7 +101,7 @@ p{
     margin: 20px;
 }
 
-.especiales{
+.especiales {
     grid-column: 1/span 2;
     grid-row: 4;
     text-align: center;
@@ -105,28 +110,29 @@ p{
 }
 
 @media screen and (max-width: 960px) {
-    .horarios{
+    .horarios {
         display: block;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto;
         text-align: center;
     }
-    .alta{
+
+    .alta {
         grid-column: 1;
         grid-row: 3;
         text-align: center;
         margin: 20px;
     }
-    
-    .baja{
+
+    .baja {
         grid-column: 1;
         grid-row: 4;
         text-align: center;
         margin-top: 20px;
         margin: 20px;
     }
-    
-    .especiales{
+
+    .especiales {
         grid-column: 1;
         grid-row: 5;
         text-align: center;

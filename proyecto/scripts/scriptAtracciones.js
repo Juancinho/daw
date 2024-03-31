@@ -1,5 +1,5 @@
 // Obtén los elementos de los botones de filtrar
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const contenedorBotones = document.querySelector('#sidebar');
     const zonaButton = contenedorBotones.querySelectorAll('.botonFiltrarZona');
     const intensidadButton = contenedorBotones.querySelectorAll('.botonFiltrarIntensidad');
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const imagenes = document.querySelectorAll('main article img');
 
     // Agrega un evento de clic al botón de filtrar por zona
-    for(let i = 0; i < zonaButton.length; i++) {    
+    for (let i = 0; i < zonaButton.length; i++) {
         zonaButton[i].addEventListener('click', (event) => {
             const zonaSeleccionada = event.target.textContent.trim().toLowerCase();
             console.log(zonaSeleccionada);
@@ -16,13 +16,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Recorre todos los artículos de las atracciones
             for (let i = 0; i < atracciones.length; i++) {
                 const atraccion = atracciones[i];
-                const zonaAtraccion = atraccion.getElementsByClassName('zona')[0].textContent.trim().toLowerCase();       
-                 
+                const zonaAtraccion = atraccion.getElementsByClassName('zona')[0].textContent.trim().toLowerCase();
+
                 console.log(zonaAtraccion);
                 console.log(zonaSeleccionada);
                 // Comprueba si la zona de la atracción coincide con la zona seleccionada
                 if (zonaAtraccion == zonaSeleccionada || zonaSeleccionada == "todas") {
-                    
+
                     atraccion.classList.remove('oculto'); // Muestra la atracción
                 } else {
                     atraccion.classList.add("oculto"); // Oculta la atracción
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    for(let i = 0; i < intensidadButton.length; i++) { 
+    for (let i = 0; i < intensidadButton.length; i++) {
         // Agrega un evento de clic al botón de filtrar por intensidad
         intensidadButton[i].addEventListener('click', (event) => {
             const intensidadSeleccionada = event.target.textContent.trim().toLowerCase();
@@ -49,25 +49,25 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    for(let i = 0; i < imagenes.length; i++) {        
+    for (let i = 0; i < imagenes.length; i++) {
         imagenes[i].addEventListener('mouseenter', (event) => {
-            const imagenSeleccionada = event.target;            
+            const imagenSeleccionada = event.target;
             imagenSeleccionada.style.opacity = '0.05'; // Hacer la imagen transparente en lugar de ocultarla
-        });  
-        
+        });
+
         imagenes[i].addEventListener('mouseleave', (event) => {
-            const imagenSeleccionada = event.target;            
+            const imagenSeleccionada = event.target;
             imagenSeleccionada.style.opacity = '1'; // Hacer la imagen visible nuevamente
-        });  
+        });
     }
-    
+
 
     //Botones de filtro por nombre
-    filtroInput.addEventListener('input', function() {
+    filtroInput.addEventListener('input', function () {
         const filtroTexto = filtroInput.value.trim().toLowerCase();
 
         // Recorre todas las atracciones
-        atracciones.forEach(function(atraccion) {
+        atracciones.forEach(function (atraccion) {
             const nombreAtraccion = atraccion.querySelector('h2').textContent.trim().toLowerCase();
 
             // Si el nombre de la atracción coincide con el filtro o el filtro está vacío, muestra la atracción
@@ -83,36 +83,36 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log(botonImagen);
     const botonDescripcion = document.getElementById('boton-descripcion');
     console.log(botonDescripcion);
-    botonImagen.addEventListener('change', function() {
+    botonImagen.addEventListener('change', function () {
         console.log('cambio');
         const imagenes = document.querySelectorAll('main article img');
-        imagenes.forEach(function(imagen) {
+        imagenes.forEach(function (imagen) {
             imagen.style.visibility = 'visible';
         });
     });
 
-    botonDescripcion.addEventListener('change', function() {
+    botonDescripcion.addEventListener('change', function () {
         const imagenes = document.querySelectorAll('main article img');
-        imagenes.forEach(function(imagen) {
+        imagenes.forEach(function (imagen) {
             imagen.style.visibility = 'hidden';
         });
-    });    
-    
+    });
+
     /*PARA IGUALAR ALTURAS*/
-   /* window.addEventListener('resize', function() {
-    let contenedores = document.querySelectorAll('article');
-
-    alturas = new Set();
-
-    for(let contenedor of contenedores){
-        alturas.add(contenedor.clientHeight); 
-    }
-    let maxHeight = Math.max(...alturas);
-
-    for(let contenedor of contenedores){
-        contenedor.style.height = maxHeight+'px';
-    }
-    console.log('La página ha sido redimensionada');
-
-    });*/
+    /* window.addEventListener('resize', function() {
+     let contenedores = document.querySelectorAll('article');
+ 
+     alturas = new Set();
+ 
+     for(let contenedor of contenedores){
+         alturas.add(contenedor.clientHeight); 
+     }
+     let maxHeight = Math.max(...alturas);
+ 
+     for(let contenedor of contenedores){
+         contenedor.style.height = maxHeight+'px';
+     }
+     console.log('La página ha sido redimensionada');
+ 
+     });*/
 });
