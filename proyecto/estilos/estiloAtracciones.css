@@ -5,6 +5,11 @@ main {
     grid-gap: 10px;
 
 }
+main h2 {
+    grid-column: 1/span 3;
+    grid-row: 1;
+
+}
 
 /*ESTILOS RECUADRO ATRACCION*/
 main article {
@@ -65,18 +70,13 @@ article p {
 
 
 
-main h2 {
-    grid-column: 1/span 3;
-    grid-row: 1;
 
-}
 
 /*ESTILO INFORMACION DE INTENSIDAD DE ATRACCION*/
-.info-atraccion {
+.info-atraccion, .zona{
     color: #fff;
     padding: 5px 10px;
     margin-top: 20px;
-    margin-left: auto;
     display: inline-block;
     border-radius: 3px;
     width: fit-content;
@@ -85,6 +85,23 @@ main h2 {
     grid-row: 1;
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
+
+}
+.atracciones {
+    grid-column: 1 /3;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.datos-atraccion {
+    display: flex;
+    justify-content: left;
+    padding-right: 0%;
+    margin-bottom: 20px;
+    grid-column: 3;
+    grid-row: 1;
+    padding-right: 30px;
 
 }
 
@@ -133,7 +150,7 @@ main h2 {
 
 }
 
-.ficcion {
+.galaxia {
     background-color: darkslategray;
     color: #fff;
 }
@@ -183,22 +200,7 @@ main article {
     margin: 0 auto;
 }
 
-.atracciones {
-    grid-column: 1 /3;
-    padding: 0px;
-    margin: 0px;
 
-}
-
-.datos-atraccion {
-    display: flex;
-    justify-content: right;
-    padding-right: 0%;
-    margin-bottom: 20px;
-    grid-column: 2;
-    grid-row: 1;
-
-}
 
 #sidebar {
     grid-column: 3;
