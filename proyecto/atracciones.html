@@ -45,7 +45,32 @@
 
     <main>
         <h1>Atracciones</h1>
-        
+        <aside id="sidebar" class="fade-in-section contenedor">
+            <!-- Contenido de la barra lateral -->
+            <h2>Filtros</h2>
+            <textarea id="filtro" rows="1" placeholder="Buscar por nombre"></textarea>
+            <ul class="lista-zonas">
+                <caption>Zona</caption>
+                <li><button class="botonFiltrarZona todas">Todas</button></li>
+                <li><button class="botonFiltrarZona"> Galaxia</button></li>
+                <li><button class="botonFiltrarZona">Medieval</button></li>
+                <li><button class="botonFiltrarZona ">Hollywood</button></li>
+                <li><button class="botonFiltrarZona ">Fantasía</button></li>
+                <li><button class="botonFiltrarZona ">Amazonas</button></li>
+
+            </ul>
+            <ul class="lista-intensidad">
+                <caption>Intensidad</caption>
+                <li><button class="botonFiltrarIntensidad familiar">Familiar</button></li>
+                <li><button class="botonFiltrarIntensidad moderada">Moderada</button></li>
+                <li><button class="botonFiltrarIntensidad intensa">Intensa</button></li>
+            </ul>
+            <ul class="modo">
+                <li class=modo><input type="radio" id="boton-imagen" name="modo" checked="true">Mostrar imagen</li>
+                <li class=modo><input type="radio" id="boton-descripcion" name="modo">Mostrar descripcion</li>
+            </ul>
+
+        </aside>    
         <div class="atracciones ">
             <article class="fade-in-section">
                 <h2>Film Coaster</h2>
@@ -213,32 +238,7 @@
 
 
         </div>
-        <aside id="sidebar" class="fade-in-section contenedor">
-            <!-- Contenido de la barra lateral -->
-            <h2>Filtros</h2>
-            <textarea id="filtro" rows="1" placeholder="Buscar por nombre"></textarea>
-            <ul class="lista-zonas">
-                <caption>Zona</caption>
-                <li><button class="botonFiltrarZona todas">Todas</button></li>
-                <li><button class="botonFiltrarZona"> Galaxia</button></li>
-                <li><button class="botonFiltrarZona">Medieval</button></li>
-                <li><button class="botonFiltrarZona ">Hollywood</button></li>
-                <li><button class="botonFiltrarZona ">Fantasía</button></li>
-                <li><button class="botonFiltrarZona ">Amazonas</button></li>
-
-            </ul>
-            <ul class="lista-intensidad">
-                <caption>Intensidad</caption>
-                <li><button class="botonFiltrarIntensidad familiar">Familiar</button></li>
-                <li><button class="botonFiltrarIntensidad moderada">Moderada</button></li>
-                <li><button class="botonFiltrarIntensidad intensa">Intensa</button></li>
-            </ul>
-            <ul class="modo">
-                <li class=modo><input type="radio" id="boton-imagen" name="modo" checked="true">Mostrar imagen</li>
-                <li class=modo><input type="radio" id="boton-descripcion" name="modo">Mostrar descripcion</li>
-            </ul>
-
-        </aside>
+        
 
     </main>
 
