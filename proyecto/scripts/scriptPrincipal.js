@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mostrar la nueva imagen
     imagenes[indiceImagenActual].style.display = 'block';
     textos[indiceImagenActual].style.display = 'block';
-    let fondo = `linear-gradient(to bottom, #ffffff 70%, ${colores[indiceImagenActual]}  50%)`;
+    let fondo = `linear-gradient(to bottom, #ffffff 60%, ${colores[indiceImagenActual]}  60%)`;
 
     contenedorCarrusel.style.background = fondo;
 

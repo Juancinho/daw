@@ -94,10 +94,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     alert(`¡Reserva realizada con éxito! 
                 Hotel: ${hotel}
-                Fecha de entrada: ${fechaElegida.toISOString().slice(0, 10)}
+                Fecha de entrada: ${fechasReserva[0].toISOString().slice(0, 10)}
                 Fecha de salida: ${fechaFin.toISOString().slice(0, 10)}
                 Personas: ${document.querySelector('#personas').value}
-                Noches: ${document.querySelector('#noches').value}                
+                Noches: ${document.querySelector('#noches').value}            
                 `);
 
                 }
