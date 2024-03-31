@@ -4,25 +4,24 @@
     <fecha>2024-04-15</fecha>
   </espectaculo>
   <espectaculo id="granDesfile">
-    <fecha>2024-03-30</fecha>
+    <fecha>2024-04-30</fecha>
     <fecha>2024-04-20</fecha>
   </espectaculo>
   <espectaculo id="clasicosCine">
-    <fecha>2024-03-30</fecha>
-    <fecha>2024-04-20</fecha>
+    <fecha>2024-05-20</fecha>
+    <fecha>2024-04-16</fecha>
   </espectaculo>
   <espectaculo id="melodiasCine">
-    <fecha>2024-03-30</fecha>
-    <fecha>2024-04-20</fecha>
-
+    <fecha>2024-05-10</fecha>
+    <fecha>2024-04-16</fecha>
     <fecha>2024-04-22</fecha>
   </espectaculo>
   <espectaculo id="nocheEstrellas">
-    <fecha>2024-03-30</fecha>
-    <fecha>2024-04-20</fecha>
+    <fecha>2024-03-15</fecha>
+    <fecha>2024-04-22</fecha>
   </espectaculo>
   <espectaculo id="heroesVillanos">
-    <fecha>2024-03-30</fecha>
-    <fecha>2024-04-20</fecha>
+    <fecha>2024-04-11</fecha>
+    <fecha>2024-04-13</fecha>
   </espectaculo>
 </espectaculos>
